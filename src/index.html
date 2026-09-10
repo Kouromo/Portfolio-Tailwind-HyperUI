@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matéo Alves — Portfolio</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <meta name="description"
+        content="Portfolio de Matéo Alves, Développeur Jeux Vidéos et Étudiant en Master AMINJ. Découvrez ses projets, compétences C#, C++, Java, web et son parcours.">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 antialiased selection:bg-violet-500 selection:text-white">
+    <input type="checkbox" id="nav-toggle" class="peer sr-only" />
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+            <a href="#" class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900">
+                <span class="inline-block size-3 rounded-full bg-violet-600"></span>
+                Matéo Alves
+            </a>
+
+            <nav aria-label="Global" class="hidden md:block">
+                <ul class="flex items-center gap-8 text-sm font-medium text-gray-600">
+                    <li><a href="#about" class="transition hover:text-violet-600">À propos</a></li>
+                    <li><a href="#skills" class="transition hover:text-violet-600">Compétences</a></li>
+                    <li><a href="#experience" class="transition hover:text-violet-600">Parcours</a></li>
+                    <li><a href="#work" class="transition hover:text-violet-600">Projets</a></li>
+                    <li><a href="#contact" class="transition hover:text-violet-600">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="#contact"
+                    class="hidden rounded-md bg-violet-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-violet-700 sm:block shadow-sm shadow-violet-200">
+                    Me contacter
+                </a>
+
+                <label for="nav-toggle" id="nav-toggle-label" aria-expanded="false" aria-controls="mobile-nav"
+                    class="cursor-pointer rounded-md p-2 text-gray-600 transition hover:bg-gray-100 md:hidden">
+                    <span class="sr-only">Toggle menu</span>
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <nav id="mobile-nav" aria-label="Global Mobile"
+            class="hidden border-t border-gray-100 bg-white peer-checked:block md:hidden">
+            <ul class="space-y-1 px-4 py-4 text-sm font-medium">
+                <li>
+                    <a href="#about" class="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50">À propos</a>
+                </li>
+                <li>
+                    <a href="#skills" class="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50">Compétences</a>
+                </li>
+                <li>
+                    <a href="#experience" class="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50">Parcours</a>
+                </li>
+                <li>
+                    <a href="#work" class="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50">Projets</a>
+                </li>
+                <li>
+                    <a href="#contact" class="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="mx-auto max-w-5xl px-4 pt-16 pb-16 sm:px-6 sm:pt-20 sm:pb-24">
+            <div
+                class="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50/50 py-1.5 pr-4 pl-3 text-xs font-semibold text-violet-700">
+                <span class="relative flex size-2">
+                    <span
+                        class="absolute inline-flex size-full animate-ping rounded-full bg-violet-400 opacity-75"></span>
+                    <span class="relative inline-flex size-2 rounded-full bg-violet-600"></span>
+                </span>
+                Master AMINJ • Développeur Jeux Vidéos
+            </div>
+
+            <h1 class="mt-6 max-w-3xl text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+                Matéo Alves
+                <span class="block text-violet-600 text-3xl sm:text-4xl lg:text-5xl font-bold mt-2">
+                    Développeur Jeux Vidéos & Informatique
+                </span>
+            </h1>
+
+            <p class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
+                Étant passionné par l'informatique depuis très jeune, j'éprouve une forte motivation à intégrer ce
+                domaine.
+                J'aime beaucoup donner vie à ce que j'écris grâce à la programmation et je souhaite travailler dans un
+                domaine
+                où je peux trouver ce plaisir.
+            </p>
+
+            <!-- Personal Values -->
+            <div class="mt-4 flex flex-wrap items-center gap-2 text-sm text-gray-500">
+                <span class="font-semibold text-gray-700">Valeurs personnelles :</span>
+                <span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700">Coopération</span>
+                <span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700">Confort</span>
+                <span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700">Confiance</span>
+            </div>
+
+            <!-- Quick Details Info Pills -->
+            <div class="mt-6 flex flex-wrap items-center gap-4 text-xs font-medium text-gray-600">
+                <div class="flex items-center gap-1.5 rounded-md bg-gray-50 px-3 py-2 border border-gray-200/80">
+                    <svg class="size-4 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Montayral (47500), Aquitaine
+                </div>
+                <div class="flex items-center gap-1.5 rounded-md bg-gray-50 px-3 py-2 border border-gray-200/80">
+                    <svg class="size-4 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    </svg>
+                    Permis B • Véhicule personnel
+                </div>
+                <div class="flex items-center gap-1.5 rounded-md bg-gray-50 px-3 py-2 border border-gray-200/80">
+                    <svg class="size-4 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                    </svg>
+                    Anglais : B2
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+                <a href="#contact"
+                    class="rounded-md bg-violet-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-violet-700 shadow-md shadow-violet-200">
+                    Me contacter
+                </a>
+
+                <a href="#work"
+                    class="inline-flex items-center gap-2 rounded-md border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 hover:text-gray-900">
+                    Voir les projets
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Compétences Section -->
+        <section id="skills" class="scroll-mt-16 border-t border-gray-100 bg-gray-50/70 py-16 sm:py-20">
+            <div class="mx-auto max-w-5xl px-4 sm:px-6">
+                <div class="max-w-xl">
+                    <p class="text-xs font-bold uppercase tracking-wider text-violet-600">Savoir-faire & Stack</p>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Compétences & Technologies
+                    </h2>
+                    <p class="mt-3 text-gray-600">
+                        Conception logicielle, développement de jeux vidéo et gestion de projet informatique.
+                    </p>
+                </div>
+
+                <!-- Main Skills Grid -->
+                <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="rounded-xl border border-gray-200/80 bg-white p-6 shadow-sm transition hover:shadow-md">
+                        <div
+                            class="inline-flex size-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                            <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 text-base font-bold text-gray-900">Conception numérique</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                            Concevoir des outils numériques pour l'apprentissage et l'accompagnement, assurer la mise en
+                            production et la vérification à toutes les étapes de fabrication.
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl border border-gray-200/80 bg-white p-6 shadow-sm transition hover:shadow-md">
+                        <div
+                            class="inline-flex size-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                            <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 text-base font-bold text-gray-900">Tests & Assurance Qualité</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                            Tester un logiciel, un système d'informations ou une application. Création de tests pour
+                            garantir la maintenabilité et la fiabilité du code.
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl border border-gray-200/80 bg-white p-6 shadow-sm transition hover:shadow-md">
+                        <div
+                            class="inline-flex size-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                            <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 text-base font-bold text-gray-900">Travail d'équipe & Agile</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                            Expérience collaborative en équipe informatique, application des pratiques de la méthode
+                            agile Scrum.
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl border border-gray-200/80 bg-white p-6 shadow-sm transition hover:shadow-md">
+                        <div
+                            class="inline-flex size-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                            <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 text-base font-bold text-gray-900">Données & Système</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                            Gérer des données de l'information et management du Système d'Information (Parcours IAMSI).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Technical Languages Badges -->
+                <div class="mt-10 rounded-2xl border border-gray-200 bg-white p-6 sm:p-8">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-gray-500">Informatique & Languages de
+                        programmation</h3>
+                    <div class="mt-4 flex flex-wrap gap-3">
+                        <span
+                            class="inline-flex items-center gap-2 rounded-lg bg-violet-50 px-4 py-2 text-sm font-semibold text-violet-700 border border-violet-100">
+                            <span class="size-2 rounded-full bg-violet-600"></span> C#
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-lg bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 border border-blue-100">
+                            <span class="size-2 rounded-full bg-blue-600"></span> Java
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-lg bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 border border-indigo-100">
+                            <span class="size-2 rounded-full bg-indigo-600"></span> C++
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-lg bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-100">
+                            <span class="size-2 rounded-full bg-emerald-600"></span> HTML / CSS
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-lg bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700 border border-amber-100">
+                            <span class="size-2 rounded-full bg-amber-600"></span> PHP / JavaScript
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-lg bg-cyan-50 px-4 py-2 text-sm font-semibold text-cyan-700 border border-cyan-100">
+                            <span class="size-2 rounded-full bg-cyan-600"></span> SQL
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parcours: Expériences & Formations Section -->
+        <section id="experience" class="mx-auto max-w-5xl scroll-mt-16 px-4 py-16 sm:px-6 sm:py-20">
+            <div class="max-w-xl">
+                <p class="text-xs font-bold uppercase tracking-wider text-violet-600">Historique</p>
+                <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Diplômes & Expériences
+                </h2>
+                <p class="mt-3 text-gray-600">
+                    Mon parcours universitaire et mes immersions professionnelles en entreprise.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-12 lg:grid-cols-2">
+                <!-- Expériences Professionnelles -->
+                <div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex size-9 items-center justify-center rounded-lg bg-violet-600 text-white">
+                            <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Expériences professionnelles</h3>
+                    </div>
+
+                    <div class="mt-6 space-y-8 border-l-2 border-violet-100 pl-6">
+                        <!-- Alternance Maltem -->
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[31px] top-1.5 size-3.5 rounded-full border-2 border-white bg-violet-600"></span>
+                            <span class="text-xs font-semibold text-violet-600">De septembre 2023 à septembre
+                                2024</span>
+                            <h4 class="mt-1 text-lg font-bold text-gray-900">Alternance : Intégration de l'équipe script
+                            </h4>
+                            <p class="text-sm font-medium text-gray-700">Maltem Insight Performance — Bidart</p>
+                            <ul class="mt-3 list-disc space-y-1.5 pl-4 text-xs text-gray-600">
+                                <li>Participation à la création et modification de scripts pour assurer la disponibilité
+                                    de services clients</li>
+                                <li>Optimisation d'outils logiciels</li>
+                                <li>Pratiques de la méthode agile Scrum</li>
+                            </ul>
+                        </div>
+
+                        <!-- Stage Maltem -->
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[31px] top-1.5 size-3.5 rounded-full border-2 border-white bg-violet-400"></span>
+                            <span class="text-xs font-semibold text-violet-600">D'avril 2023 à juin 2023</span>
+                            <h4 class="mt-1 text-lg font-bold text-gray-900">Stage : Développement de robots & évolution
+                                de l'outil interne</h4>
+                            <p class="text-sm font-medium text-gray-700">Maltem Insight Performance — Bidart</p>
+                            <ul class="mt-3 list-disc space-y-1.5 pl-4 text-xs text-gray-600">
+                                <li>Utilisation d'un outil OCR en C#</li>
+                                <li>Création de tests pour assurer la maintenabilité du code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diplômes et Formations -->
+                <div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex size-9 items-center justify-center rounded-lg bg-violet-600 text-white">
+                            <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Diplômes & Formations</h3>
+                    </div>
+
+                    <div class="mt-6 space-y-8 border-l-2 border-violet-100 pl-6">
+                        <!-- Master AMINJ -->
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[31px] top-1.5 size-3.5 rounded-full border-2 border-white bg-violet-600"></span>
+                            <span class="text-xs font-semibold text-violet-600">Depuis septembre 2025</span>
+                            <h4 class="mt-1 text-lg font-bold text-gray-900">Master AMINJ</h4>
+                            <p class="text-sm font-medium text-gray-700">Université Jean-François Champollion — Albi</p>
+                            <p class="mt-2 text-xs text-gray-600">Formation supérieure spécialisée dans la création
+                                numérique et le jeu vidéo.</p>
+                        </div>
+
+                        <!-- BUT Informatique -->
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[31px] top-1.5 size-3.5 rounded-full border-2 border-white bg-violet-400"></span>
+                            <span class="text-xs font-semibold text-violet-600">De septembre 2021 à septembre
+                                2024</span>
+                            <h4 class="mt-1 text-lg font-bold text-gray-900">BUT Informatique</h4>
+                            <p class="text-sm font-medium text-gray-700">IUT de Bayonne et du Pays Basque — Anglet</p>
+                            <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                                <strong>Parcours IAMSI (D) :</strong> Intégration d’applications et management du
+                                Système d'Information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets Section -->
+        <section id="work" class="scroll-mt-16 border-t border-gray-100 bg-gray-50/70">
+            <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+                <div class="max-w-lg">
+                    <p class="text-xs font-bold uppercase tracking-wider text-violet-600">Réalisations</p>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Projets Sélectionnés
+                    </h2>
+                    <p class="mt-2 text-gray-600">
+                        Jeux vidéo, prototypes de Game Jam et réalisations académiques/professionnelles.
+                    </p>
+                </div>
+
+                <div class="mt-12 space-y-12">
+                    <!-- Project 1: Broken Soul -->
+                    <article
+                        class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md grid items-center gap-8 sm:grid-cols-2">
+                        <div class="overflow-hidden h-full">
+                            <img alt="Broken Soul Game Jam screenshot" src="images/broken_soul.png"
+                                class="h-64 sm:h-full w-full object-cover transition duration-300 hover:scale-105" />
+                        </div>
+
+                        <div class="p-6 sm:py-8 sm:pr-8 sm:pl-0">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-700">Game
+                                    Jam</span>
+                                <span class="text-xs text-gray-500">Hego Joko's WinterJam</span>
+                            </div>
+
+                            <h3 class="mt-3 text-2xl font-bold text-gray-900">
+                                Broken Soul
+                            </h3>
+
+                            <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                                Participation à la Game Jam "Hego Joko's WinterJam" avec la création complète d'un jeu
+                                vidéo nommé <strong>Broken Soul</strong>. Conception des mécaniques de jeu et
+                                développement en équipe dans des contraintes de temps restreintes.
+                            </p>
+
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">C#</span>
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Gameplay</span>
+                                <span class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Game
+                                    Design</span>
+                            </div>
+
+                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://kouromo.github.io/portfolio/index.html" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-violet-600 transition hover:text-violet-700">
+                                    Voir la fiche du jeu
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Projet Tutoré - Reconstitution Virtuelle du Vase de la Lionne -->
+                    <article
+                        class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md grid items-center gap-8 sm:grid-cols-2">
+                        <div
+                            class="sm:order-last overflow-hidden h-full p-4 bg-gradient-to-br from-violet-50/50 to-gray-50 flex flex-col justify-center gap-3">
+                            <div class="overflow-hidden rounded-xl border border-gray-200 shadow-sm group">
+                                <img alt="Reconstitution VR du Vase de la Lionne sur Meta Quest 3" src="images/vase.png"
+                                    class="h-44 sm:h-48 w-full object-cover transition duration-300 group-hover:scale-105" />
+                            </div>
+                            <div
+                                class="overflow-hidden rounded-2xl border border-gray-100 shadow-lg dark:border-gray-800">
+                                <iframe class="aspect-video w-full"
+                                    src="https://www.youtube-nocookie.com/embed/JMdfzZkTVFw"
+                                    title="Démonstration du projet" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="p-6 sm:py-8 sm:pl-8 sm:pr-0">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-700">Projet
+                                    Tutoré VR</span>
+                                <span class="text-xs text-gray-500">Master AMINJ • Meta Quest 3</span>
+                            </div>
+
+                            <h3 class="mt-3 text-2xl font-bold text-gray-900">
+                                Reconstitution Virtuelle du Vase de la Lionne
+                            </h3>
+
+                            <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                                Expérience de réalité virtuelle (VR) sur <strong>Meta Quest 3</strong> visant à
+                                valoriser le patrimoine archéologique de Massalia (VI<sup>e</sup> siècle av. J.-C.). Le
+                                projet s'appuie sur une méthodologie <strong>Scrum</strong> (gestion de tâches, journaux
+                                de bord), le développement de guides techniques (optimisation VR, confort d'utilisation,
+                                tutoriel d'interaction) et la production de ressources numériques (modèles 3D, textures
+                                HD, ambiances audios) pour la soutenance du 13 mai 2026.
+                            </p>
+
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Meta
+                                    Quest 3 / VR</span>
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Méthodologie
+                                    Scrum</span>
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Modélisation
+                                    3D & Textures</span>
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Optimisation
+                                    & Confort VR</span>
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Patrimoine
+                                    Massalia</span>
+                            </div>
+
+                            <div class="mt-6 flex flex-wrap items-center gap-4">
+                                <span
+                                    class="inline-flex items-center gap-1.5 rounded-md bg-violet-50 border border-violet-200 px-3 py-1.5 text-xs font-semibold text-violet-700">
+                                    <svg class="size-4 text-violet-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    Soutenance prévue le 13 mai 2026
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Maltem Scripting & OCR Placeholder -->
+                    <article
+                        class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md grid items-center gap-8 sm:grid-cols-2">
+                        <div class="overflow-hidden h-full">
+                            <img alt="Maltem OCR & Scripting Placeholder" src="images/maltem_ocr.png"
+                                class="h-64 sm:h-full w-full object-cover transition duration-300 hover:scale-105" />
+                        </div>
+
+                        <div class="p-6 sm:py-8 sm:pr-8 sm:pl-0">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">Maltem
+                                    Insight Performance</span>
+                                <span class="text-xs text-gray-500">Stage & Alternance</span>
+                            </div>
+
+                            <h3 class="mt-3 text-2xl font-bold text-gray-900">
+                                Automation, OCR & Scripts Système
+                            </h3>
+
+                            <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                                Développement de robots logiciels et d'un outil OCR en C#. Création de scripts pour la
+                                supervision et le maintien de disponibilité des services clients chez Maltem Insight
+                                Performance.
+                            </p>
+
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">C#</span>
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">OCR</span>
+                                <span
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Scripting</span>
+                                <span class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Agile
+                                    Scrum</span>
+                            </div>
+
+                            <div class="mt-6 flex items-center gap-4">
+                                <span
+                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-400 cursor-not-allowed">
+                                    [Placeholder - Documentation Projet]
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centres d'intérêt & Atouts Section -->
+        <section id="about" class="mx-auto max-w-5xl scroll-mt-16 px-4 py-16 sm:px-6 sm:py-20">
+            <div class="max-w-xl">
+                <p class="text-xs font-bold uppercase tracking-wider text-violet-600">Univers & Passion</p>
+                <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Centres d'intérêt & Atouts
+                </h2>
+                <p class="mt-3 text-gray-600">
+                    Ce qui m'inspire et alimente ma créativité au quotidien.
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Gaming Card -->
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                    <div class="text-3xl">🎮</div>
+                    <h3 class="mt-3 text-lg font-bold text-gray-900">Jeux Vidéos</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Jeux préférés : <span class="font-semibold text-gray-800">For The King II, Super Smash Bros,
+                            Minecraft, Super Mario Galaxy</span>.
+                    </p>
+                </div>
+
+                <!-- Graphisme Card -->
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                    <div class="text-3xl">🎨</div>
+                    <h3 class="mt-3 text-lg font-bold text-gray-900">Graphisme</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Consultation d'artistes et dessin sur <span class="font-semibold text-gray-800">Adobe Photoshop
+                            & Illustrator</span>.
+                    </p>
+                </div>
+
+                <!-- Musique Card -->
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                    <div class="text-3xl">🎸</div>
+                    <h3 class="mt-3 text-lg font-bold text-gray-900">Musique</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Pratique de la guitare acoustique et électrique. Genres : <span
+                            class="font-semibold text-gray-800">Synthwave, alternative, rock</span>.
+                    </p>
+                </div>
+
+                <!-- Mangas Card -->
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                    <div class="text-3xl">📚</div>
+                    <h3 class="mt-3 text-lg font-bold text-gray-900">Mangas</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Œuvres préférées : <span class="font-semibold text-gray-800">Steins;Gate, Berserk</span>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section (Placeholder) -->
+        <section class="border-t border-gray-100 bg-gray-50/70">
+            <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
+                <figure class="rounded-2xl border border-dashed border-violet-300 bg-white p-8 text-center shadow-sm">
+                    <span
+                        class="inline-block rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-700">
+                        [Placeholder] Témoignage / Recommandation
+                    </span>
+
+                    <blockquote class="mt-6">
+                        <p class="text-lg font-medium text-gray-800 italic sm:text-xl">
+                            "[Placeholder - Témoignage d'un tuteur d'alternance, responsable d'équipe chez Maltem
+                            Insight Performance ou enseignant du Master AMINJ quant à l'implication, l'autonomie et
+                            l'esprit coopératif de Matéo.]"
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="mt-6 flex items-center justify-center gap-3">
+                        <div
+                            class="size-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold text-xs">
+                            [Photo]
+                        </div>
+                        <div class="text-left">
+                            <p class="text-sm font-bold text-gray-900">[Placeholder - Nom Prénom]</p>
+                            <p class="text-xs text-gray-500">[Placeholder - Titre / Entreprise]</p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mx-auto max-w-5xl scroll-mt-16 px-4 py-16 sm:px-6 sm:py-20">
+            <div class="rounded-3xl bg-gray-900 px-6 py-12 text-center text-white sm:px-12 sm:py-16 shadow-xl">
+                <span
+                    class="rounded-full bg-violet-500/20 px-3 py-1 text-xs font-semibold text-violet-300 border border-violet-500/30">
+                    Contact & Réseaux
+                </span>
+
+                <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl">
+                    Travaillons ensemble !
+                </h2>
+
+                <p class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-300">
+                    N'hésitez pas à me contacter pour toute opportunité, projet de jeu vidéo, stage/emploi ou échange
+                    autour du développement informatique.
+                </p>
+
+                <!-- Contact Details Grid -->
+                <div class="mt-8 grid gap-4 sm:grid-cols-3 max-w-2xl mx-auto">
+                    <a href="mailto:mateoalves47@gmail.com"
+                        class="flex flex-col items-center justify-center rounded-xl bg-gray-800/80 p-4 transition hover:bg-gray-800 border border-gray-700/60">
+                        <svg class="size-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span class="mt-2 text-xs font-medium text-gray-400">Email</span>
+                        <span class="text-xs font-bold text-white mt-0.5">mateoalves47@gmail.com</span>
+                    </a>
+
+                    <a href="tel:0623546551"
+                        class="flex flex-col items-center justify-center rounded-xl bg-gray-800/80 p-4 transition hover:bg-gray-800 border border-gray-700/60">
+                        <svg class="size-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span class="mt-2 text-xs font-medium text-gray-400">Téléphone</span>
+                        <span class="text-xs font-bold text-white mt-0.5">06 23 54 65 51</span>
+                    </a>
+
+                    <div
+                        class="flex flex-col items-center justify-center rounded-xl bg-gray-800/80 p-4 border border-gray-700/60">
+                        <svg class="size-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span class="mt-2 text-xs font-medium text-gray-400">Localisation</span>
+                        <span class="text-xs font-bold text-white mt-0.5">Montayral, Aquitaine</span>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="mt-8 pt-8 border-t border-gray-800">
+                    <p class="text-xs font-semibold text-gray-400">Réseaux sociaux & Portfolio</p>
+                    <div class="mt-4 flex flex-wrap items-center justify-center gap-4">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 rounded-lg bg-gray-800 px-4 py-2 text-xs font-medium text-gray-200 transition hover:bg-gray-700 hover:text-white">
+                            LinkedIn : @mateoalves
+                        </a>
+                        <a href="https://github.com/Kouromo" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 rounded-lg bg-gray-800 px-4 py-2 text-xs font-medium text-gray-200 transition hover:bg-gray-700 hover:text-white">
+                            GitHub : @Kouromo
+                        </a>
+                        <a href="https://x.com/Kouromo_" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 rounded-lg bg-gray-800 px-4 py-2 text-xs font-medium text-gray-200 transition hover:bg-gray-700 hover:text-white">
+                            Twitter / X : @Kouromo_
+                        </a>
+                        <a href="https://kouromo.github.io/portfolio/index.html" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-4 py-2 text-xs font-medium text-white transition hover:bg-violet-700">
+                            kouromo.github.io/portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white">
+        <div
+            class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
+            <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. Tous droits réservés. Montayral, Aquitaine,
+                France.</p>
+
+            <ul class="flex items-center gap-6 text-xs text-gray-500">
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-gray-900">GitHub
+                        (@Kouromo)</a></li>
+                <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-gray-900">LinkedIn
+                        (@mateoalves)</a></li>
+                <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-gray-900">Twitter
+                        (@Kouromo_)</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const navToggleCheckbox = document.getElementById('nav-toggle')
+        const navToggleLabel = document.getElementById('nav-toggle-label')
+
+        navToggleCheckbox.addEventListener('change', () => {
+            navToggleLabel.setAttribute('aria-expanded', String(navToggleCheckbox.checked))
+        })
+    </script>
+</body>
+
+</html>
