@@ -44,3 +44,5 @@ pnpm-debug.log*
 
 # Notes
 *.txt
+# Local Netlify folder
+.netlify

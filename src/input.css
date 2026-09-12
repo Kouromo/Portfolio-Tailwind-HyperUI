@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+@theme {
+  /* User Custom Color Palette */
+  --color-lilac: #B27FCE;
+  --color-violet-main: #7458C6;
+  --color-electric-blue: #4E5EFC;
+  --color-magenta-pop: #DF135C;
+
+  /* Overriding default violet palette around user primary colors #7458C6 and #B27FCE */
+  --color-violet-50: #f7f4fc;
+  --color-violet-100: #eee6f8;
+  --color-violet-200: #dccbf2;
+  --color-violet-300: #c6a7e8;
+  --color-violet-400: #B27FCE;
+  --color-violet-500: #8d6cd9;
+  --color-violet-600: #7458C6;
+  --color-violet-700: #5c43aa;
+  --color-violet-800: #493388;
+  --color-violet-900: #39286c;
+  --color-violet-950: #221648;
+
+  /* Overriding default blue / pink / indigo where appropriate for harmonious palette */
+  --color-brand-blue: #4E5EFC;
+  --color-brand-pink: #DF135C;
+}
+
+@layer utilities {
+  .bg-gradient-brand {
+    background-image: linear-gradient(135deg, #7458C6 0%, #4E5EFC 50%, #DF135C 100%);
+  }
+  .bg-gradient-brand-subtle {
+    background-image: linear-gradient(135deg, rgba(116,88,198,0.08) 0%, rgba(78,94,252,0.08) 50%, rgba(223,19,92,0.08) 100%);
+  }
+  .text-gradient-brand {
+    background-image: linear-gradient(135deg, #7458C6 0%, #4E5EFC 50%, #DF135C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
