@@ -3,6 +3,31 @@
   publish = "."
 
 [[redirects]]
+  from = "/images/*"
+  to = "/src/images/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/index-en.html"
+  to = "/src/index-en.html"
+  status = 200
+
+[[redirects]]
+  from = "/index-en"
+  to = "/src/index-en.html"
+  status = 200
+
+[[redirects]]
+  from = "/en"
+  to = "/src/index-en.html"
+  status = 200
+
+[[redirects]]
+  from = "/index.html"
+  to = "/src/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
   to = "/src/index.html"
   status = 200
