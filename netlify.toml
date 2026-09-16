@@ -8,6 +8,26 @@
   status = 200
 
 [[redirects]]
+  from = "/projets.html"
+  to = "/src/projets.html"
+  status = 200
+
+[[redirects]]
+  from = "/projets"
+  to = "/src/projets.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects-en.html"
+  to = "/src/projects-en.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects"
+  to = "/src/projects-en.html"
+  status = 200
+
+[[redirects]]
   from = "/index-en.html"
   to = "/src/index-en.html"
   status = 200

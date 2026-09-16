@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tous mes Projets — Matéo Alves</title>
+
+    <link rel="icon" type="image/png" href="/src/icon.png" />
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 antialiased selection:bg-[#7458C6] selection:text-white flex flex-col min-h-screen">
+    <input type="checkbox" id="nav-toggle" class="peer sr-only" />
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+            <a href="/src/index.html" class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900 transition hover:text-[#7458C6]">
+                <svg class="size-4 text-[#7458C6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Retour à l'accueil
+            </a>
+
+            <div class="flex items-center gap-3">
+                <!-- Sélecteur de langue -->
+                <div class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
+                    <span class="rounded-md bg-white px-2.5 py-1 text-[#7458C6] shadow-xs">FR</span>
+                    <a href="/src/projects-en.html" class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">EN</a>
+                </div>
+
+                <a href="/src/index.html#contact"
+                    class="hidden rounded-md bg-[#7458C6] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#5c43aa] sm:block shadow-sm shadow-[#7458C6]/30">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Title Section -->
+        <section class="mx-auto max-w-5xl px-4 pt-12 pb-8 sm:px-6 sm:pt-16">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 rounded-full border border-[#B27FCE]/40 bg-[#B27FCE]/10 py-1 pr-3 pl-2.5 text-xs font-semibold text-[#7458C6]">
+                    Portfolio & Démonstrations
+                </div>
+                <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                    Tous mes Projets
+                </h1>
+                <p class="mt-4 text-base leading-relaxed text-gray-600">
+                    Explorez l'ensemble de mes réalisations classées par catégories : Game Jams, projets scolaires et projets personnels.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="mt-10 flex flex-wrap items-center gap-2 border-b border-gray-200 pb-4">
+                <button data-filter="all" class="filter-btn active rounded-lg bg-[#7458C6] px-4 py-2 text-xs font-bold text-white shadow-sm transition cursor-pointer">
+                    Tous (4)
+                </button>
+                <button data-filter="gamejam" class="filter-btn rounded-lg bg-gray-100 px-4 py-2 text-xs font-semibold text-gray-600 hover:bg-gray-200 transition cursor-pointer">
+                    🎮 Game Jams
+                </button>
+                <button data-filter="scolaire" class="filter-btn rounded-lg bg-gray-100 px-4 py-2 text-xs font-semibold text-gray-600 hover:bg-gray-200 transition cursor-pointer">
+                    🎓 Projets Scolaires
+                </button>
+                <button data-filter="personnel" class="filter-btn rounded-lg bg-gray-100 px-4 py-2 text-xs font-semibold text-gray-600 hover:bg-gray-200 transition cursor-pointer">
+                    💻 Projets Personnels
+                </button>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="mx-auto max-w-5xl px-4 pb-20 sm:px-6">
+            <div id="projects-grid" class="grid gap-8 sm:grid-cols-2">
+
+                <!-- Projet 1: Gamble Versus -->
+                <article data-category="personnel gamejam"
+                    class="project-card overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:shadow-md hover:border-[#DF135C]/30 flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden h-48 bg-gray-100 relative group">
+                            <img alt="Gamble Versus screenshot" src="/src/images/gambleVersus.png"
+                                class="h-full w-full object-cover transition duration-300 group-hover:scale-105 cursor-pointer" />
+                            <span class="absolute top-3 right-3 rounded-full bg-black/60 backdrop-blur px-3 py-1 text-xs font-semibold text-white">
+                                Personnel & Académique
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="rounded-full bg-[#DF135C]/10 px-3 py-1 text-xs font-semibold text-[#DF135C] border border-[#DF135C]/20">
+                                    Jeu Tour par Tour
+                                </span>
+                            </div>
+                            <h3 class="mt-3 text-xl font-bold text-gray-900">Gamble Versus</h3>
+                            <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                                Jeu tour par tour régi par l'aléatoire. Il mélange l'aboutissement de plusieurs projets : <strong>Modélisation 3D</strong>, <strong>Programmation</strong> et <strong>externalisation des données</strong>.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Modélisation 3D</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Programmation</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Externalisation des données</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Tour par tour</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex flex-wrap items-center gap-4">
+                        <a href="https://kouromo.itch.io/gamble-versus" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1 text-xs font-semibold text-[#7458C6] hover:text-[#DF135C] transition">
+                            Fiche itch.io →
+                        </a>
+                        <a href="https://github.com/Kouromo/gamble-versus" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1 text-xs font-semibold text-[#7458C6] hover:text-[#DF135C] transition">
+                            Projet GitHub →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Projet 2: Broken Soul -->
+                <article data-category="gamejam"
+                    class="project-card overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:shadow-md hover:border-[#7458C6]/30 flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden h-48 bg-gradient-to-br from-[#7458C6]/20 via-[#4E5EFC]/10 to-gray-900 relative group flex items-center justify-center">
+                            <span class="text-4xl">🎮</span>
+                            <span class="absolute top-3 right-3 rounded-full bg-black/60 backdrop-blur px-3 py-1 text-xs font-semibold text-white">
+                                Game Jam
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="rounded-full bg-[#7458C6]/10 px-3 py-1 text-xs font-semibold text-[#7458C6] border border-[#7458C6]/20">
+                                    Game Jam Prototype
+                                </span>
+                            </div>
+                            <h3 class="mt-3 text-xl font-bold text-gray-900">Broken Soul</h3>
+                            <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                                Création de mon premier jeu vidéo lors de ma première Game Jam "Hego Joko's WinterJam". Conception des mécaniques de jeu et développement en équipe sous contraintes de temps.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">C#</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Gameplay</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Game Design</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">WinterJam</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex flex-wrap items-center gap-4">
+                        <a href="https://quentinop.itch.io/broken-soul" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1 text-xs font-semibold text-[#7458C6] hover:text-[#DF135C] transition">
+                            Voir sur itch.io →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Projet 3: Reconstitution Virtuelle du Vase de la Lionne -->
+                <article data-category="scolaire"
+                    class="project-card overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:shadow-md hover:border-[#4E5EFC]/30 flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden h-48 bg-gray-100 relative group">
+                            <img alt="Reconstitution VR du Vase de la Lionne sur Meta Quest 3" src="/src/images/vase.png"
+                                class="h-full w-full object-cover transition duration-300 group-hover:scale-105 cursor-pointer" />
+                            <span class="absolute top-3 right-3 rounded-full bg-black/60 backdrop-blur px-3 py-1 text-xs font-semibold text-white">
+                                Master AMINJ
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="rounded-full bg-[#4E5EFC]/10 px-3 py-1 text-xs font-semibold text-[#4E5EFC] border border-[#4E5EFC]/20">
+                                    Projet Tutoré VR
+                                </span>
+                            </div>
+                            <h3 class="mt-3 text-xl font-bold text-gray-900">Reconstitution Virtuelle du Vase de la Lionne</h3>
+                            <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                                Expérience VR sur Meta Quest 3 visant à valoriser le patrimoine archéologique de Massalia. Méthodologie Scrum, guides d'optimisation VR et modélisation 3D HD.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Meta Quest 3</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Agile/Scrum</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Modélisation 3D</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex flex-wrap items-center gap-4">
+                        <a href="https://www.youtube.com/watch?v=JMdfzZkTVFw" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1 text-xs font-semibold text-[#7458C6] hover:text-[#DF135C] transition">
+                            Voir la vidéo de démo →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Projet 4: DayLIA -->
+                <article data-category="scolaire"
+                    class="project-card overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:shadow-md hover:border-[#7458C6]/30 flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden h-48 bg-gray-100 relative group">
+                            <img alt="DayLIA Capture" src="/src/images/malon1.png"
+                                class="h-full w-full object-cover transition duration-300 group-hover:scale-105 cursor-pointer" />
+                            <span class="absolute top-3 right-3 rounded-full bg-black/60 backdrop-blur px-3 py-1 text-xs font-semibold text-white">
+                                Master AMINJ
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="rounded-full bg-[#7458C6]/10 px-3 py-1 text-xs font-semibold text-[#7458C6] border border-[#7458C6]/20">
+                                    Jeu Éducatif
+                                </span>
+                            </div>
+                            <h3 class="mt-3 text-xl font-bold text-gray-900">DayLIA</h3>
+                            <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                                Outil de formation pour les professionnels d'Orange à l'utilisation de l'IA au travers de jeux interactifs avec feedbacks personnalisés.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">C#</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">Unity</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">UX/UI Design</span>
+                                <span class="rounded bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">IA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex flex-wrap items-center gap-4">
+                        <a href="https://github.com/Kouromo/MALON" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1 text-xs font-semibold text-[#7458C6] hover:text-[#DF135C] transition">
+                            Voir le projet GitHub →
+                        </a>
+                        <a href="https://www.figma.com/design/ycXrXX5G8aRDaPreTXa8d2/Moodboard-EloIA?node-id=1-2&t=8npKkdZ1qrICDkI3-1" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1 text-xs font-semibold text-[#7458C6] hover:text-[#DF135C] transition">
+                            Voir le Moodboard Figma →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white mt-auto">
+        <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
+            <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. Tous droits réservés. Albi, Occitanie, France.</p>
+            <ul class="flex items-center gap-6 text-xs text-gray-500">
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6]">GitHub (@Kouromo)</a></li>
+                <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-[#4E5EFC]">LinkedIn (@mateoalves)</a></li>
+                <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-[#DF135C]">Twitter (@Kouromo_)</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Style et Modal Lightbox (Lecteur d'image en grand autonome) -->
+    <style>
+        #lightbox-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease-in-out;
+            padding: 1rem;
+        }
+
+        #lightbox-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: scale(0.95);
+            transition: transform 0.25s ease-in-out;
+        }
+
+        #lightbox-overlay.active #lightbox-content {
+            transform: scale(1);
+        }
+
+        #lightbox-img {
+            max-width: 90vw;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 0.75rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        #lightbox-caption {
+            margin-top: 0.75rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #f3f4f6;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            max-width: 80vw;
+        }
+
+        #lightbox-close {
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+            background: rgba(17, 24, 39, 0.9);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 9999px;
+            width: 2.5rem;
+            height: 2.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            transition: background 0.2s, transform 0.2s;
+            z-index: 10;
+        }
+
+        #lightbox-close:hover {
+            background: #7458C6;
+            transform: scale(1.05);
+        }
+    </style>
+
+    <div id="lightbox-overlay" aria-hidden="true">
+        <div id="lightbox-content">
+            <button id="lightbox-close" aria-label="Fermer">
+                <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="lightbox-img" src="" alt="" />
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Script Filtrage & Lightbox -->
+    <script>
+        // Filtrage des projets par catégories
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-[#7458C6]', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-gray-100', 'text-gray-600');
+                });
+
+                btn.classList.add('active', 'bg-[#7458C6]', 'text-white', 'shadow-sm');
+                btn.classList.remove('bg-gray-100', 'text-gray-600');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category.includes(filter)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Script Lightbox
+        const lightboxOverlay = document.getElementById('lightbox-overlay')
+        const lightboxImg = document.getElementById('lightbox-img')
+        const lightboxCaption = document.getElementById('lightbox-caption')
+        const lightboxClose = document.getElementById('lightbox-close')
+
+        function openLightbox(src, alt) {
+            if (!lightboxOverlay || !lightboxImg) return
+            lightboxImg.src = src
+            lightboxImg.alt = alt || ''
+            if (lightboxCaption) lightboxCaption.textContent = alt || ''
+            lightboxOverlay.classList.add('active')
+            document.body.style.overflow = 'hidden'
+        }
+
+        function closeLightbox() {
+            if (!lightboxOverlay) return
+            lightboxOverlay.classList.remove('active')
+            document.body.style.overflow = ''
+            setTimeout(() => {
+                if (!lightboxOverlay.classList.contains('active') && lightboxImg) {
+                    lightboxImg.src = ''
+                }
+            }, 250)
+        }
+
+        document.querySelectorAll('main img').forEach(img => {
+            img.style.cursor = 'pointer'
+            img.title = "Cliquer pour agrandir l'image"
+            img.addEventListener('click', (e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                openLightbox(img.src, img.alt)
+            })
+        })
+
+        if (lightboxClose) {
+            lightboxClose.addEventListener('click', (e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                closeLightbox()
+            })
+        }
+
+        if (lightboxOverlay) {
+            lightboxOverlay.addEventListener('click', (e) => {
+                if (e.target === lightboxOverlay) {
+                    closeLightbox()
+                }
+            })
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox()
+        })
+    </script>
+</body>
+
+</html>
