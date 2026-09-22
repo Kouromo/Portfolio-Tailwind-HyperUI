@@ -36,9 +36,11 @@
 
             <div class="flex items-center gap-3">
                 <!-- Sélecteur de langue -->
-                <div class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
+                <div
+                    class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
                     <span class="rounded-md bg-white px-2.5 py-1 text-[#7458C6] shadow-xs">FR</span>
-                    <a href="/src/index-en.html" class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">EN</a>
+                    <a href="/src/index-en.html"
+                        class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">EN</a>
                 </div>
 
                 <a href="#contact"
@@ -392,10 +394,10 @@
                 <div class="max-w-lg">
                     <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Réalisations</p>
                     <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                        Projets Sélectionnés
+                        Projets Phares
                     </h2>
                     <p class="mt-2 text-gray-600">
-                        Jeux vidéo, prototypes de Game Jam et réalisations académiques/professionnelles.
+                        Sélection de mes meilleures réalisations et projets vidéo ludiques.
                     </p>
                 </div>
 
@@ -539,7 +541,8 @@
                         <div class="p-6 sm:py-8 sm:pl-8 sm:pr-0">
                             <div class="flex flex-wrap items-center gap-2">
                                 <span
-                                    class="rounded-full bg-[#DF135C]/10 px-3 py-1 text-xs font-semibold text-[#DF135C] border border-[#DF135C]/20">Jeu Tour par Tour</span>
+                                    class="rounded-full bg-[#DF135C]/10 px-3 py-1 text-xs font-semibold text-[#DF135C] border border-[#DF135C]/20">Jeu
+                                    Tour par Tour</span>
                                 <span class="text-xs text-gray-500">Projet personnel & académique</span>
                             </div>
 
@@ -548,19 +551,23 @@
                             </h3>
 
                             <p class="mt-3 text-sm leading-relaxed text-gray-600">
-                                Jeu tour par tour régi par l'aléatoire. Il mélange l'aboutissement de plusieurs projets :
-                                <strong>Modélisation 3D</strong>, <strong>Programmation</strong> et <strong>externalisation des données</strong>.
+                                Jeu tour par tour régi par l'aléatoire. Il mélange l'aboutissement de plusieurs projets
+                                :
+                                <strong>Modélisation 3D</strong>, <strong>Programmation</strong> et
+                                <strong>externalisation des données</strong>.
                             </p>
 
                             <div class="mt-4 flex flex-wrap gap-2">
                                 <span
-                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Modélisation 3D</span>
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Modélisation
+                                    3D</span>
                                 <span
                                     class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Programmation</span>
                                 <span
-                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Externalisation des données</span>
-                                <span
-                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Jeu tour par tour</span>
+                                    class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Externalisation
+                                    des données</span>
+                                <span class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Jeu tour
+                                    par tour</span>
                             </div>
 
                             <div class="mt-6 flex flex-wrap items-center gap-4">
@@ -593,8 +600,23 @@
                         </div>
                     </article>
                 </div>
+
+                <!-- Bouton Voir tous les projets -->
+                <div class="mt-12 flex flex-wrap items-center justify-end gap-4">
+                    <a href="projets.html"
+                        class="group inline-flex items-center gap-3 rounded-lg bg-gradient-to-r from-[#7458C6] to-[#4E5EFC] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#7458C6]/30 transition duration-300 hover:shadow-xl hover:shadow-[#4E5EFC]/40 hover:-translate-y-0.5">
+                        Voir tous les projets
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2.5" stroke="currentColor"
+                            class="size-5 transition-transform duration-300 group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </section>
+
 
         <!-- Centres d'intérêt & Atouts Section -->
         <section id="about" class="mx-auto max-w-5xl scroll-mt-16 px-4 py-16 sm:px-6 sm:py-20">
@@ -794,97 +816,21 @@
         </div>
     </footer>
 
-    <!-- Style et Modal Lightbox (Lecteur d'image en grand autonome) -->
-    <style>
-        #lightbox-overlay {
-            position: fixed;
-            inset: 0;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.25s ease-in-out;
-            padding: 1rem;
-        }
-
-        #lightbox-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        #lightbox-content {
-            position: relative;
-            max-width: 90vw;
-            max-height: 90vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transform: scale(0.95);
-            transition: transform 0.25s ease-in-out;
-        }
-
-        #lightbox-overlay.active #lightbox-content {
-            transform: scale(1);
-        }
-
-        #lightbox-img {
-            max-width: 90vw;
-            max-height: 80vh;
-            object-fit: contain;
-            border-radius: 0.75rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        #lightbox-caption {
-            margin-top: 0.75rem;
-            text-align: center;
-            font-size: 0.875rem;
-            color: #f3f4f6;
-            font-weight: 600;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-            max-width: 80vw;
-        }
-
-        #lightbox-close {
-            position: absolute;
-            top: -1rem;
-            right: -1rem;
-            background: rgba(17, 24, 39, 0.9);
-            color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 9999px;
-            width: 2.5rem;
-            height: 2.5rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-            transition: background 0.2s, transform 0.2s;
-            z-index: 10;
-        }
-
-        #lightbox-close:hover {
-            background: #7458C6;
-            transform: scale(1.05);
-        }
-    </style>
-
-    <div id="lightbox-overlay" aria-hidden="true">
-        <div id="lightbox-content">
-            <button id="lightbox-close" aria-label="Fermer">
-                <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <!-- Modal Lightbox (Lecteur d'image en grand autonome) -->
+    <div id="lightbox-overlay" aria-hidden="true"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-md p-4 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+        <div id="lightbox-content"
+            class="relative flex max-h-[90vh] max-w-[90vw] scale-95 flex-col items-center transition-transform duration-300 ease-in-out">
+            <button id="lightbox-close" aria-label="Fermer"
+                class="absolute -top-4 -right-4 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-gray-900/90 text-white shadow-lg shadow-black/50 transition duration-200 hover:scale-105 hover:bg-[#7458C6]">
+                <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <img id="lightbox-img" src="" alt="" />
-            <p id="lightbox-caption"></p>
+            <img id="lightbox-img" src="" alt=""
+                class="max-h-[80vh] max-w-[90vw] rounded-xl border border-white/15 object-contain shadow-2xl shadow-black/80" />
+            <p id="lightbox-caption"
+                class="mt-3 max-w-[80vw] text-center text-sm font-semibold text-gray-100 drop-shadow-md"></p>
         </div>
     </div>
 
@@ -900,28 +846,35 @@
 
         // Script Lecteur d'image Lightbox
         const lightboxOverlay = document.getElementById('lightbox-overlay')
+        const lightboxContent = document.getElementById('lightbox-content')
         const lightboxImg = document.getElementById('lightbox-img')
         const lightboxCaption = document.getElementById('lightbox-caption')
         const lightboxClose = document.getElementById('lightbox-close')
 
         function openLightbox(src, alt) {
-            if (!lightboxOverlay || !lightboxImg) return
+            if (!lightboxOverlay || !lightboxImg || !lightboxContent) return
             lightboxImg.src = src
             lightboxImg.alt = alt || ''
             if (lightboxCaption) lightboxCaption.textContent = alt || ''
-            lightboxOverlay.classList.add('active')
+            lightboxOverlay.classList.remove('opacity-0', 'pointer-events-none')
+            lightboxOverlay.classList.add('opacity-100', 'pointer-events-auto')
+            lightboxContent.classList.remove('scale-95')
+            lightboxContent.classList.add('scale-100')
             document.body.style.overflow = 'hidden'
         }
 
         function closeLightbox() {
-            if (!lightboxOverlay) return
-            lightboxOverlay.classList.remove('active')
+            if (!lightboxOverlay || !lightboxContent) return
+            lightboxOverlay.classList.remove('opacity-100', 'pointer-events-auto')
+            lightboxOverlay.classList.add('opacity-0', 'pointer-events-none')
+            lightboxContent.classList.remove('scale-100')
+            lightboxContent.classList.add('scale-95')
             document.body.style.overflow = ''
             setTimeout(() => {
-                if (!lightboxOverlay.classList.contains('active') && lightboxImg) {
+                if (lightboxOverlay.classList.contains('opacity-0') && lightboxImg) {
                     lightboxImg.src = ''
                 }
-            }, 250)
+            }, 300)
         }
 
         // Rendre les images de projets cliquables
