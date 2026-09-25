@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayLIA — Matéo Alves</title>
+
+    <link rel="icon" type="image/png" href="/src/icon.png" />
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 antialiased selection:bg-[#7458C6] selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+            <a href="/src/projects-en.html"
+                class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900 transition hover:text-[#7458C6]">
+                <svg class="size-4 text-[#7458C6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Back to projects</span>
+            </a>
+
+            <div class="flex items-center gap-3">
+                <div class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
+                    <a href="/src/projets/daylia.html" class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">FR</a>
+                    <span class="rounded-md bg-white px-2.5 py-1 text-[#7458C6] shadow-xs">EN</span>
+                </div>
+
+                <a href="/src/index-en.html#contact"
+                    class="hidden rounded-md bg-[#7458C6] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#5c43aa] sm:block shadow-sm shadow-[#7458C6]/30">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Breadcrumbs -->
+        <div class="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
+            <nav class="flex items-center gap-2 text-xs font-medium text-gray-500">
+                <a href="/src/index-en.html" class="transition hover:text-[#7458C6]">Home</a>
+                <span class="text-gray-300">/</span>
+                <a href="/src/projects-en.html" class="transition hover:text-[#7458C6]">All Projects</a>
+                <span class="text-gray-300">/</span>
+                <span class="font-semibold text-gray-900 truncate">DayLIA</span>
+            </nav>
+        </div>
+
+        <!-- Hero Header -->
+        <section class="mx-auto max-w-5xl px-4 pt-4 pb-10 sm:px-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="rounded-full bg-[#7458C6]/10 px-3.5 py-1 text-xs font-semibold text-[#7458C6] border border-[#7458C6]/20">
+                    Educational Game
+                </span>
+                <span class="text-xs text-gray-500">Master AMINJ • MALON Team</span>
+            </div>
+
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                DayLIA
+            </h1>
+
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-gray-600 max-w-3xl">
+                Interactive training tool for Orange professionals on the practical use and adoption of Artificial Intelligence.
+            </p>
+
+            <!-- Quick Meta Card -->
+            <div class="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-gray-200 bg-gray-50/70 p-5 sm:grid-cols-4">
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Role</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Unity Developer & UX Designer</span>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Duration</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">3 months</span>
+                </div>
+                <div class="col-span-2">
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Technologies & Tools</span>
+                    <div class="mt-1.5 flex flex-wrap gap-1.5">
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">C#</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Unity</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">UX/UI Design</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">AI</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">WebGL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Links -->
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+                <a href="https://play.unity.com/en/games/72e69d93-f722-4e43-8971-2d1efe9c1ba4/daylia-v1" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 rounded-lg bg-[#7458C6] px-4 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-[#5c43aa] hover:shadow-md">
+                    <span>Play Online (Unity Play)</span>
+                    <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </a>
+                <a href="https://github.com/Kouromo/MALON" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 rounded-lg border border-gray-300 bg-white px-4 py-2 text-xs font-semibold text-gray-700 shadow-xs transition hover:bg-gray-50 hover:text-gray-900">
+                    <svg class="size-3.5 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>GitHub Repository</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Visual Hero Media -->
+        <section class="mx-auto max-w-5xl px-4 sm:px-6 mb-12">
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm cursor-pointer"
+                    onclick="openLightbox('/src/images/malon1.png', 'DayLIA — Interactive training minigames')">
+                    <img src="/src/images/malon1.png" alt="DayLIA Gameplay 1"
+                        class="w-full h-72 sm:h-80 object-cover transition duration-300 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+                        <span class="text-xs font-semibold text-white">Interface & Prompting Challenges</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm cursor-pointer"
+                    onclick="openLightbox('/src/images/malon2.png', 'DayLIA — Feedback and score screen')">
+                    <img src="/src/images/malon2.png" alt="DayLIA Gameplay 2"
+                        class="w-full h-72 sm:h-80 object-cover transition duration-300 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+                        <span class="text-xs font-semibold text-white">Dynamic Feedback & AI Assistance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview & Context -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="lg:col-span-2">
+                    <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Project Overview</p>
+                    <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Interactive AI Training for Orange</h2>
+                    <p class="mt-4 text-sm leading-relaxed text-gray-600">
+                        Designed in partnership with Orange during our Master's degree, DayLIA addresses the challenge of making artificial intelligence accessible and demystifying it for enterprise collaborators. Through bite-sized interactive scenarios and situational challenges, employees experience prompt engineering, bias detection, and source verification firsthand. An automated feedback module guides users step-by-step through their learning curve.
+                    </p>
+                    <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                        [Placeholder: Detail the measured acculturation indicators, target job profiles, and findings from user testing sessions.]
+                    </p>
+                </div>
+                <div class="rounded-xl border border-gray-200 bg-gray-50/80 p-5">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400">Pedagogical Pillars</h3>
+                    <ul class="mt-3 space-y-2 text-xs font-medium text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Micro-learning & rapid sessions (5-10 min)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Interactive feedback & contextualized explanations
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Multiplatform WebGL deployment
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Engaging & corporate visual identity
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process & Methodology -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="max-w-2xl mb-8">
+                <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Methodology</p>
+                <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Conception Steps</h2>
+                <p class="mt-2 text-sm text-gray-600">From user needs analysis to online deployment.</p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+                <!-- Step 1 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 1</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Needs Analysis & UX Design</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Definition of professional personas, wireframing, and creation of the interactive moodboard in Figma.
+                        <br><br>
+                        <em>[Placeholder: Detail Orange personas and use-case scenarios.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 2</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Minigame Architecture & Logic</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Development of C# logic bricks in Unity: prompt validation, score computation, and scenario branching.
+                        <br><br>
+                        <em>[Placeholder: Describe design patterns used (Command, Observer) to interconnect minigames.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 3</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Educational Feedback Generation</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Implementation of a dynamic advice and mistake-analysis system to nurture critical thinking around AI.
+                        <br><br>
+                        <em>[Placeholder: Detail the rule engine generating customized feedback.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 4</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">WebGL Build & Deployment</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Asset optimization and WebGL compression for seamless in-browser execution with zero installation.
+                        <br><br>
+                        <em>[Placeholder: Describe publication on Unity Play and tester feedback.]</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-gray-900 sm:text-2xl">Project Gallery</h2>
+                    <p class="text-xs text-gray-500 mt-1">Click on any screenshot to view in full screen.</p>
+                </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/malon1.png', 'DayLIA — AI training minigames')">
+                    <div class="overflow-hidden h-52 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/malon1.png" alt="DayLIA Capture 1"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">AI Training Minigames</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-[#7458C6] shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/malon2.png', 'DayLIA — Feedback screen and scoring')">
+                    <div class="overflow-hidden h-52 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/malon2.png" alt="DayLIA Capture 2"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Feedback & Scoring Interface</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-[#7458C6] shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Retrospective & Takeaways -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 via-white to-gray-50 p-6 sm:p-8">
+                <h3 class="text-lg font-bold text-gray-900">Takeaways & Retrospective</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                    DayLIA illustrated how video games can dismantle apprehension around artificial intelligence and foster its enlightened adoption in corporations.
+                    <br><br>
+                    [Placeholder: Add your reflections on designing acculturation tools for emerging technologies.]
+                </p>
+            </div>
+        </section>
+
+        <!-- Previous / Next Navigation -->
+        <nav class="mx-auto max-w-5xl px-4 py-12 sm:px-6 border-t border-gray-100">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <a href="/src/projects/vase-de-la-lionne.html"
+                    class="group flex items-center gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50">
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">←</span>
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Previous Project</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Vase de la Lionne</span>
+                    </div>
+                </a>
+
+                <a href="/src/projects/hydroliaz-station.html"
+                    class="group flex items-center justify-end gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50 text-right">
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Next Project</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Hydroliaz Station</span>
+                    </div>
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">→</span>
+                </a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white mt-auto">
+        <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
+            <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. All rights reserved. Albi, Occitanie, France.</p>
+            <ul class="flex items-center gap-6 text-xs text-gray-500">
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6]">GitHub (@Kouromo)</a></li>
+                <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-[#4E5EFC]">LinkedIn (@mateoalves)</a></li>
+                <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-[#DF135C]">Twitter (@Kouromo_)</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-overlay" aria-hidden="true"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-md p-4 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+        <div id="lightbox-content"
+            class="relative flex max-h-[90vh] max-w-[90vw] scale-95 flex-col items-center transition-transform duration-300 ease-in-out">
+            <button id="lightbox-close" aria-label="Close"
+                class="absolute -top-4 -right-4 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-gray-900/90 text-white shadow-lg shadow-black/50 transition duration-200 hover:scale-105 hover:bg-[#7458C6]">
+                <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="lightbox-img" src="" alt=""
+                class="max-h-[80vh] max-w-[90vw] rounded-xl border border-white/15 object-contain shadow-2xl shadow-black/80" />
+            <p id="lightbox-caption" class="mt-3 max-w-[80vw] text-center text-sm font-semibold text-gray-100 drop-shadow-md"></p>
+        </div>
+    </div>
+
+    <script>
+        const lightboxOverlay = document.getElementById('lightbox-overlay');
+        const lightboxContent = document.getElementById('lightbox-content');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        function openLightbox(src, alt) {
+            if (!lightboxOverlay || !lightboxImg || !lightboxContent) return;
+            lightboxImg.src = src;
+            lightboxImg.alt = alt || '';
+            if (lightboxCaption) lightboxCaption.textContent = alt || '';
+            lightboxOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            lightboxOverlay.classList.add('opacity-100', 'pointer-events-auto');
+            lightboxContent.classList.remove('scale-95');
+            lightboxContent.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            if (!lightboxOverlay || !lightboxContent) return;
+            lightboxOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+            lightboxOverlay.classList.add('opacity-0', 'pointer-events-none');
+            lightboxContent.classList.remove('scale-100');
+            lightboxContent.classList.add('scale-95');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                if (lightboxOverlay.classList.contains('opacity-0') && lightboxImg) {
+                    lightboxImg.src = '';
+                }
+            }, 300);
+        }
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        if (lightboxOverlay) {
+            lightboxOverlay.addEventListener('click', (e) => {
+                if (e.target === lightboxOverlay) closeLightbox();
+            });
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Creation & Pixel Art (Aseprite) — Matéo Alves</title>
+
+    <link rel="icon" type="image/png" href="/src/icon.png" />
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 antialiased selection:bg-[#7458C6] selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+            <a href="/src/projects-en.html"
+                class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900 transition hover:text-[#7458C6]">
+                <svg class="size-4 text-[#7458C6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Back to projects</span>
+            </a>
+
+            <div class="flex items-center gap-3">
+                <div class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
+                    <a href="/src/projets/aseprite-pixel-art.html" class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">FR</a>
+                    <span class="rounded-md bg-white px-2.5 py-1 text-[#7458C6] shadow-xs">EN</span>
+                </div>
+
+                <a href="/src/index-en.html#contact"
+                    class="hidden rounded-md bg-[#7458C6] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#5c43aa] sm:block shadow-sm shadow-[#7458C6]/30">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Breadcrumbs -->
+        <div class="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
+            <nav class="flex items-center gap-2 text-xs font-medium text-gray-500">
+                <a href="/src/index-en.html" class="transition hover:text-[#7458C6]">Home</a>
+                <span class="text-gray-300">/</span>
+                <a href="/src/projects-en.html" class="transition hover:text-[#7458C6]">All Projects</a>
+                <span class="text-gray-300">/</span>
+                <span class="font-semibold text-gray-900 truncate">Pixel Art (Aseprite)</span>
+            </nav>
+        </div>
+
+        <!-- Hero Header -->
+        <section class="mx-auto max-w-5xl px-4 pt-4 pb-10 sm:px-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="rounded-full bg-[#7458C6]/10 px-3.5 py-1 text-xs font-semibold text-[#7458C6] border border-[#7458C6]/20">
+                    Personal Project
+                </span>
+                <span class="text-xs text-gray-500">2D Showcase • Game Art & Animation</span>
+            </div>
+
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                Sprite Creation & Pixel Art (Aseprite)
+            </h1>
+
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-gray-600 max-w-3xl">
+                Retro illustrations, environmental tilesets, and frame-by-frame character animations authored in Aseprite with engine-ready spritesheet packaging.
+            </p>
+
+            <!-- Quick Meta Card -->
+            <div class="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-gray-200 bg-gray-50/70 p-5 sm:grid-cols-4">
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Role</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Pixel Artist & 2D Animator</span>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Duration</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Continuous Practice</span>
+                </div>
+                <div class="col-span-2">
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Technologies & Tools</span>
+                    <div class="mt-1.5 flex flex-wrap gap-1.5">
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Aseprite</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Indexed Palettes</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">2D Animation</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Hue Shifting</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Spritesheets</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Hero Media -->
+        <section class="mx-auto max-w-5xl px-4 sm:px-6 mb-12">
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-950 shadow-sm cursor-pointer flex items-center justify-center p-6 sm:p-12"
+                onclick="openLightbox('/src/images/sassado.png', 'Pixel Art — Original character design in Aseprite')">
+                <img src="/src/images/sassado.png" alt="Pixel Art Character"
+                    style="image-rendering: pixelated; image-rendering: crisp-edges;"
+                    class="max-h-80 w-auto object-contain transition duration-300 group-hover:scale-110" />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-center">
+                    <span class="text-xs sm:text-sm font-medium text-white drop-shadow">Original character illustration and design in pixel art created in Aseprite</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Context & Overview -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="lg:col-span-2">
+                    <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Creative Philosophy</p>
+                    <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">The Art of Visual Constraint</h2>
+                    <p class="mt-4 text-sm leading-relaxed text-gray-600">
+                        Pixel art is the craft of making every pixel carry weight. Operating within strict resolution ceilings (16x16, 32x32, or 64x64) demands crisp silhouette readability, disciplined value contrast, and thoughtful palette selection to give life and personality to 2D game worlds.
+                    </p>
+                    <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                        [Placeholder: Detail your artistic influences (classic 16-bit games, contemporary indies like Celeste or Dead Cells) and favorite color palettes.]
+                    </p>
+                </div>
+                <div class="rounded-xl border border-gray-200 bg-gray-50/80 p-5">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400">Rules & Craftsmanship</h3>
+                    <ul class="mt-3 space-y-2 text-xs font-medium text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Strict double-pixel (jaggies) cleaning
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Color shading with warm/cool hue shifting
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Decomposed fluid keyframe cycles
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Atlas packing for Unity Sprite Editor
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="max-w-2xl mb-8">
+                <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Graphic Workflow</p>
+                <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Creation Stages</h2>
+                <p class="mt-2 text-sm text-gray-600">From color palette curation to frame-by-frame animation loops.</p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+                <!-- Step 1 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 01</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Color Palettes & Hue Shifting</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Restricting colors (16 to 32 shades). Systematically shifting hues cooler in cast shadows and warmer in highlights to avoid muddy grayscale values.
+                        <br><br>
+                        <em>[Placeholder: Discuss favorite indexed palettes and ramp design.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 02</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Silhouette Design & Cluster Readability</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Inking solid silhouette outlines to guarantee characters and interactables instantly pop against busy game backgrounds.
+                        <br><br>
+                        <em>[Placeholder: Explain pixel clustering and selective anti-aliasing techniques.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 03</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Frame-by-Frame Animation</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Animating walk, run, jump, attack, and death cycles inside Aseprite's timeline. Incorporating anticipation, squash & stretch, and impactful smears.
+                        <br><br>
+                        <em>[Placeholder: Describe timing, spacing, and recovery keyframe rhythms.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 04</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Spritesheet Packaging & Engine Setup</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Exporting optimized atlases with consistent pivot baselines, configured for crisp Point (no filter) rendering in Unity Sprite Editor.
+                        <br><br>
+                        <em>[Placeholder: Detail engine import settings and animation controller setup.]</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-gray-900 sm:text-2xl">Project Gallery</h2>
+                    <p class="text-xs text-gray-500 mt-1">Click on any spritesheet to view in full screen.</p>
+                </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-950 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/sassado.png', 'Aseprite — Pixel art character')">
+                    <div class="overflow-hidden h-56 bg-black flex items-center justify-center p-4">
+                        <img src="/src/images/sassado.png" alt="Sassado Pixel Art"
+                            style="image-rendering: pixelated; image-rendering: crisp-edges;"
+                            class="max-h-48 w-auto object-contain transition duration-300 group-hover:scale-110" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Character design and illustration</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-[#7458C6] shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-950 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/aseprite_sprites.png', 'Aseprite — Spritesheets and 2D animation cycles')">
+                    <div class="overflow-hidden h-56 bg-gray-900 flex items-center justify-center">
+                        <img src="/src/images/aseprite_sprites.png" alt="Aseprite Spritesheets"
+                            style="image-rendering: pixelated; image-rendering: crisp-edges;"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Spritesheets and 2D frame cycles</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-[#7458C6] shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Retrospective -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 via-white to-gray-50 p-6 sm:p-8">
+                <h3 class="text-lg font-bold text-gray-900">Artistic Takeaways</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                    Practicing pixel art sharpens attention toward essential visual anchors. It gives me a prized dual skillset: authoring both the underlying game code and the handcrafted artwork that brings it emotional resonance.
+                    <br><br>
+                    [Placeholder: Add your personal thoughts on traditional 2D animation and future artistic projects.]
+                </p>
+            </div>
+        </section>
+
+        <!-- Previous / Next Navigation -->
+        <nav class="mx-auto max-w-5xl px-4 py-12 sm:px-6 border-t border-gray-100">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <a href="/src/projects/blender-3d.html"
+                    class="group flex items-center gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50">
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">←</span>
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Previous Project</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">3D Modeling (Blender)</span>
+                    </div>
+                </a>
+
+                <a href="/src/projects/gamble-versus.html"
+                    class="group flex items-center justify-end gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50 text-right">
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Next Project</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Gamble Versus</span>
+                    </div>
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">→</span>
+                </a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white mt-auto">
+        <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
+            <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. All rights reserved. Albi, Occitanie, France.</p>
+            <ul class="flex items-center gap-6 text-xs text-gray-500">
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6]">GitHub (@Kouromo)</a></li>
+                <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-[#4E5EFC]">LinkedIn (@mateoalves)</a></li>
+                <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-[#DF135C]">Twitter (@Kouromo_)</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-overlay" aria-hidden="true"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-md p-4 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+        <div id="lightbox-content"
+            class="relative flex max-h-[90vh] max-w-[90vw] scale-95 flex-col items-center transition-transform duration-300 ease-in-out">
+            <button id="lightbox-close" aria-label="Close"
+                class="absolute -top-4 -right-4 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-gray-900/90 text-white shadow-lg shadow-black/50 transition duration-200 hover:scale-105 hover:bg-[#7458C6]">
+                <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="lightbox-img" src="" alt=""
+                class="max-h-[80vh] max-w-[90vw] rounded-xl border border-white/15 object-contain shadow-2xl shadow-black/80" />
+            <p id="lightbox-caption" class="mt-3 max-w-[80vw] text-center text-sm font-semibold text-gray-100 drop-shadow-md"></p>
+        </div>
+    </div>
+
+    <script>
+        const lightboxOverlay = document.getElementById('lightbox-overlay');
+        const lightboxContent = document.getElementById('lightbox-content');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        function openLightbox(src, alt) {
+            if (!lightboxOverlay || !lightboxImg || !lightboxContent) return;
+            lightboxImg.src = src;
+            lightboxImg.alt = alt || '';
+            if (lightboxCaption) lightboxCaption.textContent = alt || '';
+            lightboxOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            lightboxOverlay.classList.add('opacity-100', 'pointer-events-auto');
+            lightboxContent.classList.remove('scale-95');
+            lightboxContent.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            if (!lightboxOverlay || !lightboxContent) return;
+            lightboxOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+            lightboxOverlay.classList.add('opacity-0', 'pointer-events-none');
+            lightboxContent.classList.remove('scale-100');
+            lightboxContent.classList.add('scale-95');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                if (lightboxOverlay.classList.contains('opacity-0') && lightboxImg) {
+                    lightboxImg.src = '';
+                }
+            }, 300);
+        }
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        if (lightboxOverlay) {
+            lightboxOverlay.addEventListener('click', (e) => {
+                if (e.target === lightboxOverlay) closeLightbox();
+            });
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>

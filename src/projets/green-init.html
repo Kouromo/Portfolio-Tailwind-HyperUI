@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green-init — Matéo Alves</title>
+
+    <link rel="icon" type="image/png" href="/src/icon.png" />
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 antialiased selection:bg-[#7458C6] selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+            <a href="/src/projets.html"
+                class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900 transition hover:text-[#7458C6]">
+                <svg class="size-4 text-[#7458C6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Retour aux projets</span>
+            </a>
+
+            <div class="flex items-center gap-3">
+                <div class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
+                    <span class="rounded-md bg-white px-2.5 py-1 text-[#7458C6] shadow-xs">FR</span>
+                    <a href="/src/projects/green-init.html" class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">EN</a>
+                </div>
+
+                <a href="/src/index.html#contact"
+                    class="hidden rounded-md bg-[#7458C6] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#5c43aa] sm:block shadow-sm shadow-[#7458C6]/30">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Fil d'Ariane -->
+        <div class="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
+            <nav class="flex items-center gap-2 text-xs font-medium text-gray-500">
+                <a href="/src/index.html" class="transition hover:text-[#7458C6]">Accueil</a>
+                <span class="text-gray-300">/</span>
+                <a href="/src/projets.html" class="transition hover:text-[#7458C6]">Tous les projets</a>
+                <span class="text-gray-300">/</span>
+                <span class="font-semibold text-gray-900 truncate">Green-init</span>
+            </nav>
+        </div>
+
+        <!-- Hero En-tête -->
+        <section class="mx-auto max-w-5xl px-4 pt-4 pb-10 sm:px-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="rounded-full bg-emerald-100 px-3.5 py-1 text-xs font-semibold text-emerald-800 border border-emerald-200">
+                    Application Web
+                </span>
+                <span class="text-xs text-gray-500">BUT 3 Informatique • Numérique Responsable</span>
+            </div>
+
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                Green-init
+            </h1>
+
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-gray-600 max-w-3xl">
+                Plateforme web d'auto-diagnostic et de sensibilisation au Numérique Responsable (N.R.), évaluant les services en ligne selon 4 piliers fondamentaux.
+            </p>
+
+            <!-- Fiche Méta Rapide -->
+            <div class="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-gray-200 bg-gray-50/70 p-5 sm:grid-cols-4">
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Rôle</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Développeur Full-Stack & Référent N.R.</span>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Durée</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Projet annuel (SAÉ)</span>
+                </div>
+                <div class="col-span-2">
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Technologies & Outils</span>
+                    <div class="mt-1.5 flex flex-wrap gap-1.5">
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">PHP</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">JavaScript</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">HTML/CSS</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">RGAA / WCAG</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Matomo</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Éco-index</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Liens d'action -->
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+                <a href="https://github.com/Kouromo/Green-init" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 rounded-lg bg-emerald-700 px-4 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-emerald-800 hover:shadow-md">
+                    <svg class="size-3.5 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    <span>Dépôt GitHub</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Media Hero Principal -->
+        <section class="mx-auto max-w-5xl px-4 sm:px-6 mb-12">
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm cursor-pointer"
+                onclick="openLightbox('/src/images/Capture d\'écran 2026-09-22 202404.png', 'Green-init — Page d\'accueil et sensibilisation N.R.')">
+                <img src="/src/images/Capture d'écran 2026-09-22 202404.png" alt="Interface Green-init"
+                    class="w-full h-80 sm:h-96 object-cover object-top transition duration-300 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                    <span class="text-sm font-semibold text-white">Interface de diagnostic Green-init : audit rapide et pédagogique des sites web</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Les 4 Piliers Fondamentaux -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="max-w-2xl mb-8">
+                <p class="text-xs font-bold uppercase tracking-wider text-emerald-700">Méthodologie d'Audit</p>
+                <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Les 4 Piliers d'Évaluation</h2>
+                <p class="mt-2 text-sm text-gray-600">Un diagnostic multicritère alliant écologie, accessibilité et souveraineté numérique.</p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="rounded-xl border border-emerald-100 bg-emerald-50/50 p-5">
+                    <div class="size-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">01</div>
+                    <h3 class="mt-3 text-sm font-bold text-gray-900">Hébergement Vert</h3>
+                    <p class="mt-2 text-xs text-gray-600 leading-relaxed">
+                        Vérification de la localisation des serveurs, des engagements bas-carbone et des labels de centres de données durables.
+                    </p>
+                </div>
+                <div class="rounded-xl border border-emerald-100 bg-emerald-50/50 p-5">
+                    <div class="size-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">02</div>
+                    <h3 class="mt-3 text-sm font-bold text-gray-900">Accessibilité (RGAA)</h3>
+                    <p class="mt-2 text-xs text-gray-600 leading-relaxed">
+                        Contraste des couleurs, balisage sémantique pour lecteurs d'écran, navigation clavier et conformité WCAG / RGAA.
+                    </p>
+                </div>
+                <div class="rounded-xl border border-emerald-100 bg-emerald-50/50 p-5">
+                    <div class="size-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">03</div>
+                    <h3 class="mt-3 text-sm font-bold text-gray-900">Analytics Éthiques</h3>
+                    <p class="mt-2 text-xs text-gray-600 leading-relaxed">
+                        Respect strict du RGPD, mesure d'audience respectueuse de la vie privée sans traceurs intrusifs (Matomo / Plausible).
+                    </p>
+                </div>
+                <div class="rounded-xl border border-emerald-100 bg-emerald-50/50 p-5">
+                    <div class="size-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">04</div>
+                    <h3 class="mt-3 text-sm font-bold text-gray-900">Qualité & Éco-index</h3>
+                    <p class="mt-2 text-xs text-gray-600 leading-relaxed">
+                        Nombre de requêtes HTTP, poids total des pages, complexité du DOM et optimisation des assets pour réduire l'énergie consommée.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contexte & Vue d'ensemble -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="lg:col-span-2">
+                    <p class="text-xs font-bold uppercase tracking-wider text-emerald-700">Contexte du Projet</p>
+                    <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Accompagner la Transition Numérique</h2>
+                    <p class="mt-4 text-sm leading-relaxed text-gray-600">
+                        Green-init est né d'un projet de fin d'études mené en 3e année de BUT Informatique à l'IUT de Bayonne. L'objectif était de répondre aux besoins exprimés par des acteurs régionaux en Nouvelle-Aquitaine souhaitant guider les PME et associations vers des choix numériques plus sobres et éthiques.
+                    </p>
+                    <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                        [Placeholder : Précisez ici le cahier des charges initial, les partenariats territoriaux et les profils d'utilisateurs ciblés.]
+                    </p>
+                </div>
+                <div class="rounded-xl border border-gray-200 bg-gray-50/80 p-5">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400">Atouts Techniques</h3>
+                    <ul class="mt-3 space-y-2 text-xs font-medium text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-emerald-600"></span>
+                            Score global synthétique et transparent
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-emerald-600"></span>
+                            Recommandations vulgarisées et actionnables
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-emerald-600"></span>
+                            Application éco-conçue à empreinte minimale
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-emerald-600"></span>
+                            Architecture modulaire prête pour de nouveaux critères
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Processus de Réalisation -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="max-w-2xl mb-8">
+                <p class="text-xs font-bold uppercase tracking-wider text-emerald-700">Développement</p>
+                <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Étapes de Conception</h2>
+                <p class="mt-2 text-sm text-gray-600">De la formalisation du référentiel à l'architecture applicative.</p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+                <!-- Étape 1 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-emerald-500/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-emerald-700 tracking-wider uppercase">Étape 01</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Élaboration du Référentiel</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Synthèse des normes existantes (RGAA 4.1, critères Green Web Foundation, guide d'écoconception DINUM) pour bâtir un questionnaire et des métriques intelligibles pour les décideurs.
+                        <br><br>
+                        <em>[Placeholder : Détailler le barème de pondération entre accessibilité et empreinte carbone.]</em>
+                    </p>
+                </div>
+
+                <!-- Étape 2 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-emerald-500/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-emerald-700 tracking-wider uppercase">Étape 02</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Architecture Web & Parsing</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Développement du moteur en PHP et JavaScript : formulaires d'auto-évaluation guidés, analyse des en-têtes HTTP et calcul des scores indicatifs.
+                        <br><br>
+                        <em>[Placeholder : Expliquer la gestion des requêtes d'analyse et la sécurisation du traitement.]</em>
+                    </p>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-emerald-500/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-emerald-700 tracking-wider uppercase">Étape 03</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Génération des Rapports Actionnables</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Création d'une vue de synthèse visuelle claire proposant des fiches conseils étape par étape pour aider l'organisation à corriger ses points faibles prioritaires.
+                        <br><br>
+                        <em>[Placeholder : Décrire les fiches de préconisations générées pour les utilisateurs.]</em>
+                    </p>
+                </div>
+
+                <!-- Étape 4 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-emerald-500/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-emerald-700 tracking-wider uppercase">Étape 04</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Éco-conception Appliquée</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Application des principes N.R. à Green-init : code épuré sans bibliothèques superflues, palette chromatique contrastée et responsive design exemplaire.
+                        <br><br>
+                        <em>[Placeholder : Présenter les résultats obtenus par Green-init sur son propre audit.]</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie d'Images -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-gray-900 sm:text-2xl">Galerie du Projet</h2>
+                    <p class="text-xs text-gray-500 mt-1">Cliquez sur une capture pour l'ouvrir en plein écran.</p>
+                </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/green_init.png', 'Green-init — Logo et identité visuelle')">
+                    <div class="overflow-hidden h-48 bg-white flex items-center justify-center p-4">
+                        <img src="/src/images/green_init.png" alt="Logo Green-init"
+                            class="max-h-36 w-auto object-contain transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Identité visuelle Green-init</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-emerald-700 shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/Capture d\'écran 2026-09-22 202404.png', 'Green-init — Page d\'accueil')">
+                    <div class="overflow-hidden h-48 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/Capture d'écran 2026-09-22 202404.png" alt="Accueil Green-init"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Page d'accueil & sensibilisation</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-emerald-700 shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/Capture d\'écran 2026-09-22 202506.png', 'Green-init — Formulaire d\'auto-évaluation')">
+                    <div class="overflow-hidden h-48 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/Capture d'écran 2026-09-22 202506.png" alt="Formulaire Green-init"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Formulaire d'auto-évaluation</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-emerald-700 shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/Capture d\'écran 2026-09-22 202550.png', 'Green-init — Critères d\'évaluation')">
+                    <div class="overflow-hidden h-48 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/Capture d'écran 2026-09-22 202550.png" alt="Critères de durabilité"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Critères d'évaluation de durabilité</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-emerald-700 shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/Capture d\'écran 2026-09-22 202604.png', 'Green-init — Résultats et rapport de synthèse')">
+                    <div class="overflow-hidden h-48 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/Capture d'écran 2026-09-22 202604.png" alt="Résultats et rapport"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Rapport synthétique et scores</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-emerald-700 shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bilan -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="rounded-2xl border border-gray-200 bg-gradient-to-br from-emerald-50/50 via-white to-gray-50 p-6 sm:p-8">
+                <h3 class="text-lg font-bold text-gray-900">Bilan & Sensibilité Écologique</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                    La conception de Green-init a durablement ancré dans ma pratique de développeur les réflexes d'accessibilité (RGAA/WCAG), d'écoconception et d'éthique de la donnée. Des standards de qualité devenus indispensables pour concevoir des applications web durables et inclusives.
+                    <br><br>
+                    [Placeholder : Complétez ici avec vos réflexions sur l'avenir de l'écoconception web et les perspectives d'évolution de l'outil.]
+                </p>
+            </div>
+        </section>
+
+        <!-- Navigation Projet Précédent / Suivant -->
+        <nav class="mx-auto max-w-5xl px-4 py-12 sm:px-6 border-t border-gray-100">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <a href="/src/projets/impact-certificate.html"
+                    class="group flex items-center gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50">
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">←</span>
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Projet précédent</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Impact Certificate</span>
+                    </div>
+                </a>
+
+                <a href="/src/projets/lost-labyrinth.html"
+                    class="group flex items-center justify-end gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50 text-right">
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Projet suivant</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Lost Labyrinth</span>
+                    </div>
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">→</span>
+                </a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white mt-auto">
+        <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
+            <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. Tous droits réservés. Albi, Occitanie, France.</p>
+            <ul class="flex items-center gap-6 text-xs text-gray-500">
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6]">GitHub (@Kouromo)</a></li>
+                <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-[#4E5EFC]">LinkedIn (@mateoalves)</a></li>
+                <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-[#DF135C]">Twitter (@Kouromo_)</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-overlay" aria-hidden="true"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-md p-4 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+        <div id="lightbox-content"
+            class="relative flex max-h-[90vh] max-w-[90vw] scale-95 flex-col items-center transition-transform duration-300 ease-in-out">
+            <button id="lightbox-close" aria-label="Fermer"
+                class="absolute -top-4 -right-4 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-gray-900/90 text-white shadow-lg shadow-black/50 transition duration-200 hover:scale-105 hover:bg-[#7458C6]">
+                <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="lightbox-img" src="" alt=""
+                class="max-h-[80vh] max-w-[90vw] rounded-xl border border-white/15 object-contain shadow-2xl shadow-black/80" />
+            <p id="lightbox-caption" class="mt-3 max-w-[80vw] text-center text-sm font-semibold text-gray-100 drop-shadow-md"></p>
+        </div>
+    </div>
+
+    <script>
+        const lightboxOverlay = document.getElementById('lightbox-overlay');
+        const lightboxContent = document.getElementById('lightbox-content');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        function openLightbox(src, alt) {
+            if (!lightboxOverlay || !lightboxImg || !lightboxContent) return;
+            lightboxImg.src = src;
+            lightboxImg.alt = alt || '';
+            if (lightboxCaption) lightboxCaption.textContent = alt || '';
+            lightboxOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            lightboxOverlay.classList.add('opacity-100', 'pointer-events-auto');
+            lightboxContent.classList.remove('scale-95');
+            lightboxContent.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            if (!lightboxOverlay || !lightboxContent) return;
+            lightboxOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+            lightboxOverlay.classList.add('opacity-0', 'pointer-events-none');
+            lightboxContent.classList.remove('scale-100');
+            lightboxContent.classList.add('scale-95');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                if (lightboxOverlay.classList.contains('opacity-0') && lightboxImg) {
+                    lightboxImg.src = '';
+                }
+            }, 300);
+        }
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        if (lightboxOverlay) {
+            lightboxOverlay.addEventListener('click', (e) => {
+                if (e.target === lightboxOverlay) closeLightbox();
+            });
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Modding & Custom Assets — Matéo Alves</title>
+
+    <link rel="icon" type="image/png" href="/src/icon.png" />
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 antialiased selection:bg-[#7458C6] selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+            <a href="/src/projects-en.html"
+                class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900 transition hover:text-[#7458C6]">
+                <svg class="size-4 text-[#7458C6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Back to projects</span>
+            </a>
+
+            <div class="flex items-center gap-3">
+                <div class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
+                    <a href="/src/projets/modding-cosmetics.html" class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">FR</a>
+                    <span class="rounded-md bg-white px-2.5 py-1 text-[#7458C6] shadow-xs">EN</span>
+                </div>
+
+                <a href="/src/index-en.html#contact"
+                    class="hidden rounded-md bg-[#7458C6] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#5c43aa] sm:block shadow-sm shadow-[#7458C6]/30">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Breadcrumbs -->
+        <div class="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
+            <nav class="flex items-center gap-2 text-xs font-medium text-gray-500">
+                <a href="/src/index-en.html" class="transition hover:text-[#7458C6]">Home</a>
+                <span class="text-gray-300">/</span>
+                <a href="/src/projects-en.html" class="transition hover:text-[#7458C6]">All Projects</a>
+                <span class="text-gray-300">/</span>
+                <span class="font-semibold text-gray-900 truncate">Game Modding & Cosmetics</span>
+            </nav>
+        </div>
+
+        <!-- Hero Header -->
+        <section class="mx-auto max-w-5xl px-4 pt-4 pb-10 sm:px-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="rounded-full bg-[#DF135C]/10 px-3.5 py-1 text-xs font-semibold text-[#DF135C] border border-[#DF135C]/20">
+                    Personal Project
+                </span>
+                <span class="text-xs text-gray-500">R.E.P.O. • GWYF • PEAK • Thunderstore</span>
+            </div>
+
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                Game Modding & Custom Assets
+            </h1>
+
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-gray-600 max-w-3xl">
+                3D mesh modeling, custom rigging, hand-tailored shaders, and community mod injection for indie games using BepInEx and Thunderstore.
+            </p>
+
+            <!-- Quick Meta Card -->
+            <div class="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-gray-200 bg-gray-50/70 p-5 sm:grid-cols-4">
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Role</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">3D Modder, Rigging Artist & Integrator</span>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Duration</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Ongoing Projects</span>
+                </div>
+                <div class="col-span-2">
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Technologies & Tools</span>
+                    <div class="mt-1.5 flex flex-wrap gap-1.5">
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Blender</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Unity</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">BepInEx</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Thunderstore</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Rigging & Shaders</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Published Mods Action Links -->
+            <div class="mt-6 flex flex-wrap items-center gap-2">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mr-1">Published Mods:</span>
+                <a href="https://thunderstore.io/c/peak/p/Soul_Gate/EGadd_Peak_Cosmetics/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-semibold text-gray-700 transition hover:bg-[#7458C6] hover:text-white hover:border-[#7458C6]">
+                    <span>PEAK: E. Gadd</span>
+                    <svg class="size-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+                <a href="https://thunderstore.io/c/repo/p/Soul_Gate/Furina/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-semibold text-gray-700 transition hover:bg-[#7458C6] hover:text-white hover:border-[#7458C6]">
+                    <span>R.E.P.O.: Furina</span>
+                    <svg class="size-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+                <a href="https://thunderstore.io/c/repo/p/Soul_Gate/Venti/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-semibold text-gray-700 transition hover:bg-[#7458C6] hover:text-white hover:border-[#7458C6]">
+                    <span>R.E.P.O.: Venti</span>
+                    <svg class="size-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+                <a href="https://thunderstore.io/c/gamble-with-your-friends/p/Soul_Gate/Caine/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-semibold text-gray-700 transition hover:bg-[#7458C6] hover:text-white hover:border-[#7458C6]">
+                    <span>GWYF: Caine</span>
+                    <svg class="size-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Main Hero Media -->
+        <section class="mx-auto max-w-5xl px-4 sm:px-6 mb-12">
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-950 shadow-sm cursor-pointer"
+                onclick="openLightbox('/src/images/modding_showcase.png', 'Modding & Cosmetics — 3D in-game integration showcase')">
+                <img src="/src/images/modding_showcase.png" alt="Modding Showcase"
+                    class="w-full h-80 sm:h-96 object-cover transition duration-300 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-6">
+                    <span class="text-sm font-semibold text-white">Showcase of 3D cosmetics authored and injected into R.E.P.O., GWYF, and PEAK</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Context & Overview -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="lg:col-span-2">
+                    <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Project Overview</p>
+                    <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Reverse Engineering & Rigging Artistry</h2>
+                    <p class="mt-4 text-sm leading-relaxed text-gray-600">
+                        Modding serves as a demanding technical playground: dissecting proprietary game architectures, complying with strict original skeletal animation constraints, and authoring shaders that integrate imperceptibly into each game's artistic direction.
+                    </p>
+                    <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                        [Placeholder: Detail your motivation, third-party rig adaptation challenges, and download figures across Thunderstore.]
+                    </p>
+                </div>
+                <div class="rounded-xl border border-gray-200 bg-gray-50/80 p-5">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400">Modding Competencies</h3>
+                    <ul class="mt-3 space-y-2 text-xs font-medium text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Skeleton dissection & hierarchy mapping
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Precise vertex weight painting in Blender
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Unity AssetBundles packaging & BepInEx
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Community release lifecycle on Thunderstore
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="max-w-2xl mb-8">
+                <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Technical Pipeline</p>
+                <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Cosmetic Integration Stages</h2>
+                <p class="mt-2 text-sm text-gray-600">From host asset extraction to community publication on Thunderstore.</p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+                <!-- Step 1 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 01</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Reverse Engineering & Skeleton Extraction</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Analyzing host game files: inspecting bone naming hierarchies, scale multipliers, and mesh polygon ceilings.
+                        <br><br>
+                        <em>[Placeholder: Describe AssetBundle inspection tools and decompilation workflows.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 02</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Mesh Adaptation & Skinning</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        In Blender: adjusting proportions to match the host rig, transferring bone weights to preserve seamless walk, jump, and emote animations without deformation tearing.
+                        <br><br>
+                        <em>[Placeholder: Discuss edge deformation handling across joint articulations.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 03</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Shaders & Art Direction Matching</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Calibrating materials to replicate target engine shaders (cel-shading, PBR metallic-roughness, or unlit retro styling) for seamless visual cohesion.
+                        <br><br>
+                        <em>[Placeholder: Explain normal map adjustments and glossiness matching.]</em>
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 04</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">AssetBundle Build & Thunderstore</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Compiling into Unity AssetBundles, configuring BepInEx manifests, multiplayer sync testing, and deploying to Thunderstore with clear install docs.
+                        <br><br>
+                        <em>[Placeholder: Discuss maintaining mod compatibility during official game updates.]</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-gray-900 sm:text-2xl">Project Gallery</h2>
+                    <p class="text-xs text-gray-500 mt-1">Click on any screenshot to view in full screen.</p>
+                </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-1">
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-950 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/modding_showcase.png', 'Modding & Cosmetics — Custom 3D character models')">
+                    <div class="overflow-hidden h-72 sm:h-96 bg-black flex items-center justify-center">
+                        <img src="/src/images/modding_showcase.png" alt="Modding Showcase"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Custom 3D cosmetics successfully integrated into multiplayer indie titles</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-[#7458C6] shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Retrospective -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 via-white to-gray-50 p-6 sm:p-8">
+                <h3 class="text-lg font-bold text-gray-900">Project Retrospective</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                    Modding fosters an intimate understanding of commercial production realities: binary file formats, multiplayer polygon budgets, and strict compliance with legacy animation pipelines.
+                    <br><br>
+                    [Placeholder: Add your personal thoughts on how modding shaped your technical versatility as a game developer.]
+                </p>
+            </div>
+        </section>
+
+        <!-- Previous / Next Navigation -->
+        <nav class="mx-auto max-w-5xl px-4 py-12 sm:px-6 border-t border-gray-100">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <a href="/src/projects/keyzard.html"
+                    class="group flex items-center gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50">
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">←</span>
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Previous Project</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Keyzard</span>
+                    </div>
+                </a>
+
+                <a href="/src/projects/blender-3d.html"
+                    class="group flex items-center justify-end gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50 text-right">
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Next Project</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">3D Modeling (Blender)</span>
+                    </div>
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">→</span>
+                </a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white mt-auto">
+        <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
+            <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. All rights reserved. Albi, Occitanie, France.</p>
+            <ul class="flex items-center gap-6 text-xs text-gray-500">
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6]">GitHub (@Kouromo)</a></li>
+                <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-[#4E5EFC]">LinkedIn (@mateoalves)</a></li>
+                <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-[#DF135C]">Twitter (@Kouromo_)</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-overlay" aria-hidden="true"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-md p-4 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+        <div id="lightbox-content"
+            class="relative flex max-h-[90vh] max-w-[90vw] scale-95 flex-col items-center transition-transform duration-300 ease-in-out">
+            <button id="lightbox-close" aria-label="Close"
+                class="absolute -top-4 -right-4 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-gray-900/90 text-white shadow-lg shadow-black/50 transition duration-200 hover:scale-105 hover:bg-[#7458C6]">
+                <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="lightbox-img" src="" alt=""
+                class="max-h-[80vh] max-w-[90vw] rounded-xl border border-white/15 object-contain shadow-2xl shadow-black/80" />
+            <p id="lightbox-caption" class="mt-3 max-w-[80vw] text-center text-sm font-semibold text-gray-100 drop-shadow-md"></p>
+        </div>
+    </div>
+
+    <script>
+        const lightboxOverlay = document.getElementById('lightbox-overlay');
+        const lightboxContent = document.getElementById('lightbox-content');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        function openLightbox(src, alt) {
+            if (!lightboxOverlay || !lightboxImg || !lightboxContent) return;
+            lightboxImg.src = src;
+            lightboxImg.alt = alt || '';
+            if (lightboxCaption) lightboxCaption.textContent = alt || '';
+            lightboxOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            lightboxOverlay.classList.add('opacity-100', 'pointer-events-auto');
+            lightboxContent.classList.remove('scale-95');
+            lightboxContent.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            if (!lightboxOverlay || !lightboxContent) return;
+            lightboxOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+            lightboxOverlay.classList.add('opacity-0', 'pointer-events-none');
+            lightboxContent.classList.remove('scale-100');
+            lightboxContent.classList.add('scale-95');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                if (lightboxOverlay.classList.contains('opacity-0') && lightboxImg) {
+                    lightboxImg.src = '';
+                }
+            }, 300);
+        }
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        if (lightboxOverlay) {
+            lightboxOverlay.addEventListener('click', (e) => {
+                if (e.target === lightboxOverlay) closeLightbox();
+            });
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>

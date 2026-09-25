@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modélisation 3D (Blender) — Matéo Alves</title>
+
+    <link rel="icon" type="image/png" href="/src/icon.png" />
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 antialiased selection:bg-[#7458C6] selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+            <a href="/src/projets.html"
+                class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900 transition hover:text-[#7458C6]">
+                <svg class="size-4 text-[#7458C6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Retour aux projets</span>
+            </a>
+
+            <div class="flex items-center gap-3">
+                <div class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
+                    <span class="rounded-md bg-white px-2.5 py-1 text-[#7458C6] shadow-xs">FR</span>
+                    <a href="/src/projects/blender-3d.html" class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">EN</a>
+                </div>
+
+                <a href="/src/index.html#contact"
+                    class="hidden rounded-md bg-[#7458C6] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#5c43aa] sm:block shadow-sm shadow-[#7458C6]/30">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Fil d'Ariane -->
+        <div class="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
+            <nav class="flex items-center gap-2 text-xs font-medium text-gray-500">
+                <a href="/src/index.html" class="transition hover:text-[#7458C6]">Accueil</a>
+                <span class="text-gray-300">/</span>
+                <a href="/src/projets.html" class="transition hover:text-[#7458C6]">Tous les projets</a>
+                <span class="text-gray-300">/</span>
+                <span class="font-semibold text-gray-900 truncate">Modélisation 3D (Blender)</span>
+            </nav>
+        </div>
+
+        <!-- Hero En-tête -->
+        <section class="mx-auto max-w-5xl px-4 pt-4 pb-10 sm:px-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="rounded-full bg-orange-100 px-3.5 py-1 text-xs font-semibold text-orange-700 border border-orange-200">
+                    Projet Personnel
+                </span>
+                <span class="text-xs text-gray-500">Showcase 3D • Pratique continue</span>
+            </div>
+
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                Modélisation 3D (Blender)
+            </h1>
+
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-gray-600 max-w-3xl">
+                Création d'objets, props et décors 3D sous Blender : maîtrise de la topologie, dépliage UV, texturation procédurale et mise en lumière Cycles / Eevee.
+            </p>
+
+            <!-- Fiche Méta Rapide -->
+            <div class="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-gray-200 bg-gray-50/70 p-5 sm:grid-cols-4">
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Rôle</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Artiste 3D & Concepteur d'Assets</span>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Durée</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Pratique continue</span>
+                </div>
+                <div class="col-span-2">
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Technologies & Outils</span>
+                    <div class="mt-1.5 flex flex-wrap gap-1.5">
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Blender</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Cycles & Eevee</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Topologie & Quads</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">UV Unwrapping</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Shading procédural</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Hero Principal -->
+        <section class="mx-auto max-w-5xl px-4 sm:px-6 mb-12">
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-950 shadow-sm cursor-pointer flex items-center justify-center p-4 sm:p-8"
+                onclick="openLightbox('/src/images/donuts.gif', 'Modélisation 3D — Rendu animé sous Blender')">
+                <img src="/src/images/donuts.gif" alt="Donut 3D animé"
+                    class="max-h-96 w-auto object-contain rounded-lg transition duration-300 group-hover:scale-105" />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-center">
+                    <span class="text-xs sm:text-sm font-medium text-white drop-shadow">Rendu 3D et animation avec simulation de glaçage sous Blender</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contexte & Vue d'ensemble -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="lg:col-span-2">
+                    <p class="text-xs font-bold uppercase tracking-wider text-orange-600">Démarche Artistique</p>
+                    <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Géométrie Propre & Rendu Temps Réel</h2>
+                    <p class="mt-4 text-sm leading-relaxed text-gray-600">
+                        La modélisation 3D est au cœur de ma pratique créative. De l'apprentissage des fondamentaux aux créations complexes d'environnements et d'accessoires de jeu, je m'efforce de maîtriser la chaîne complète : géométrie optimisée en quads, dépliage UV sans étirement, shaders de matériaux réalistes et composition de lumière.
+                    </p>
+                    <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                        [Placeholder : Précisez ici vos techniques de modélisation favorites (Hard-Surface, Sub-D), vos inspirations et vos objectifs artistiques.]
+                    </p>
+                </div>
+                <div class="rounded-xl border border-gray-200 bg-gray-50/80 p-5">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400">Piliers 3D</h3>
+                    <ul class="mt-3 space-y-2 text-xs font-medium text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-orange-500"></span>
+                            Topologie propre orientée jeux temps réel
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-orange-500"></span>
+                            Maximisation de la texel density sur les UV
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-orange-500"></span>
+                            Shaders nodaux modulaires et procéduraux
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-orange-500"></span>
+                            Éclairage studio 3 points & ambiant
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Processus de Réalisation -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="max-w-2xl mb-8">
+                <p class="text-xs font-bold uppercase tracking-wider text-orange-600">Pipeline de Production</p>
+                <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Étapes de Création d'un Asset</h2>
+                <p class="mt-2 text-sm text-gray-600">De l'esquisse de silhouette au rendu final sous moteur.</p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+                <!-- Étape 1 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-orange-400/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-orange-600 tracking-wider uppercase">Étape 01</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Modélisation & Topologie</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Construction du maillage polygonal : respect des boucles d'arêtes (edge loops), modélisation hard-surface propre et contrôle du polycount pour préserver les performances.
+                        <br><br>
+                        <em>[Placeholder : Décrire les modificateurs couramment employés (Subdivision, Bevel, Mirror).]</em>
+                    </p>
+                </div>
+
+                <!-- Étape 2 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-orange-400/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-orange-600 tracking-wider uppercase">Étape 02</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Dépliage UV & Texture Space</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Découpage stratégique des coutures (seams) dans les zones invisibles, minimisation de l'étirement et empilement des îles symétriques pour optimiser la mémoire de texture.
+                        <br><br>
+                        <em>[Placeholder : Détailler les règles de texel density appliquées.]</em>
+                    </p>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-orange-400/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-orange-600 tracking-wider uppercase">Étape 03</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Shading Procédural & Matériaux</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Assemblage des Shader Nodes dans Blender : simulation de rugosité (roughness), rayures de surface, refractions de verre et masques procéduraux.
+                        <br><br>
+                        <em>[Placeholder : Présenter la création de matériaux PBR personnalisés.]</em>
+                    </p>
+                </div>
+
+                <!-- Étape 4 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-orange-400/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-orange-600 tracking-wider uppercase">Étape 04</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Éclairage, Cadrage & Rendu</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Configuration d'éclairages à 3 points (Key, Fill, Rim), réglage de la profondeur de champ (Depth of Field) et rendu final sous Cycles ou Eevee.
+                        <br><br>
+                        <em>[Placeholder : Décrire les paramètres de color management et de compositing.]</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie d'Images -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-gray-900 sm:text-2xl">Galerie du Projet</h2>
+                    <p class="text-xs text-gray-500 mt-1">Cliquez sur un modèle pour l'ouvrir en plein écran.</p>
+                </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-3">
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-950 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/donuts.gif', 'Blender 3D — Donut animé')">
+                    <div class="overflow-hidden h-52 bg-black flex items-center justify-center">
+                        <img src="/src/images/donuts.gif" alt="Donut 3D"
+                            class="max-h-44 w-auto object-contain transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Animation 3D et glaçage</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-orange-600 shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-950 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/blender_models.png', 'Blender 3D — Collection de modèles et props')">
+                    <div class="overflow-hidden h-52 bg-gray-900 flex items-center justify-center">
+                        <img src="/src/images/blender_models.png" alt="Objets Blender"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Collection d'objets et props</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-orange-600 shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-950 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/Screenshot.png', 'Blender 3D — Composition et rendu')">
+                    <div class="overflow-hidden h-52 bg-gray-900 flex items-center justify-center">
+                        <img src="/src/images/Screenshot.png" alt="Rendu Blender"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Éclairage et mise en scène</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-orange-600 shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bilan -->
+        <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 border-t border-gray-100">
+            <div class="rounded-2xl border border-gray-200 bg-gradient-to-br from-orange-50/50 via-white to-gray-50 p-6 sm:p-8">
+                <h3 class="text-lg font-bold text-gray-900">Évolution & Perspectives 3D</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                    La pratique continue sous Blender me permet de rester agile entre modélisation organique et hard-surface, avec pour objectif constant de produire des assets prêts pour l'intégration temps réel dans Unity et Unreal Engine.
+                    <br><br>
+                    [Placeholder : Complétez ici avec vos prochains défis 3D (sculpting numérique avancé, rigging complexe, shaders volumétriques).]
+                </p>
+            </div>
+        </section>
+
+        <!-- Navigation Projet Précédent / Suivant -->
+        <nav class="mx-auto max-w-5xl px-4 py-12 sm:px-6 border-t border-gray-100">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <a href="/src/projets/modding-cosmetics.html"
+                    class="group flex items-center gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50">
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">←</span>
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Projet précédent</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Modding & Cosmétiques</span>
+                    </div>
+                </a>
+
+                <a href="/src/projets/aseprite-pixel-art.html"
+                    class="group flex items-center justify-end gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50 text-right">
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Projet suivant</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Pixel Art (Aseprite)</span>
+                    </div>
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition">→</span>
+                </a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white mt-auto">
+        <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
+            <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. Tous droits réservés. Albi, Occitanie, France.</p>
+            <ul class="flex items-center gap-6 text-xs text-gray-500">
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6]">GitHub (@Kouromo)</a></li>
+                <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-[#4E5EFC]">LinkedIn (@mateoalves)</a></li>
+                <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-[#DF135C]">Twitter (@Kouromo_)</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-overlay" aria-hidden="true"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-md p-4 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+        <div id="lightbox-content"
+            class="relative flex max-h-[90vh] max-w-[90vw] scale-95 flex-col items-center transition-transform duration-300 ease-in-out">
+            <button id="lightbox-close" aria-label="Fermer"
+                class="absolute -top-4 -right-4 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-gray-900/90 text-white shadow-lg shadow-black/50 transition duration-200 hover:scale-105 hover:bg-[#7458C6]">
+                <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="lightbox-img" src="" alt=""
+                class="max-h-[80vh] max-w-[90vw] rounded-xl border border-white/15 object-contain shadow-2xl shadow-black/80" />
+            <p id="lightbox-caption" class="mt-3 max-w-[80vw] text-center text-sm font-semibold text-gray-100 drop-shadow-md"></p>
+        </div>
+    </div>
+
+    <script>
+        const lightboxOverlay = document.getElementById('lightbox-overlay');
+        const lightboxContent = document.getElementById('lightbox-content');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        function openLightbox(src, alt) {
+            if (!lightboxOverlay || !lightboxImg || !lightboxContent) return;
+            lightboxImg.src = src;
+            lightboxImg.alt = alt || '';
+            if (lightboxCaption) lightboxCaption.textContent = alt || '';
+            lightboxOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            lightboxOverlay.classList.add('opacity-100', 'pointer-events-auto');
+            lightboxContent.classList.remove('scale-95');
+            lightboxContent.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            if (!lightboxOverlay || !lightboxContent) return;
+            lightboxOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+            lightboxOverlay.classList.add('opacity-0', 'pointer-events-none');
+            lightboxContent.classList.remove('scale-100');
+            lightboxContent.classList.add('scale-95');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                if (lightboxOverlay.classList.contains('opacity-0') && lightboxImg) {
+                    lightboxImg.src = '';
+                }
+            }, 300);
+        }
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        if (lightboxOverlay) {
+            lightboxOverlay.addEventListener('click', (e) => {
+                if (e.target === lightboxOverlay) closeLightbox();
+            });
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>
