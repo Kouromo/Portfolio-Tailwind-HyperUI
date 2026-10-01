@@ -125,10 +125,10 @@
 
         <!-- Media Hero Principal -->
         <section class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 sm:px-8 mb-12">
-            <div class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-950 shadow-sm cursor-pointer flex items-center justify-center p-4 sm:p-8"
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm cursor-pointer flex items-center justify-center"
                 onclick="openLightbox('/src/images/brokenSoul.png', 'Broken Soul — Écran titre du jeu')">
                 <img src="/src/images/brokenSoul.png" alt="Broken Soul - Title Screen"
-                    class="max-h-96 w-auto object-contain rounded-lg transition duration-300 group-hover:scale-105" />
+                    class="w-full h-[28rem] object-cover transition duration-300 group-hover:scale-105" />
                 <div
                     class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-center">
                     <span class="text-xs sm:text-sm font-medium text-white drop-shadow">Écran titre de Broken
@@ -142,16 +142,14 @@
             <div class="grid gap-8 lg:grid-cols-3">
                 <div class="lg:col-span-2">
                     <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Contexte du Projet</p>
-                    <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Baptême du Feu en 48 Heures</h2>
+                    <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Platformer inversé</h2>
                     <p class="mt-4 text-sm leading-relaxed text-gray-600">
                         Broken Soul représente la création de mon tout premier jeu vidéo dans le cadre de la WinterJam
-                        organisée par l'association étudiante Hego Joko. Un défi collectif intense de 48 heures où nous
-                        avons dû concevoir un univers, scripter les mécaniques sous Unity en C#, et livrer un build
-                        fonctionnel avant le compte à rebours final.
+                        organisée par l'association étudiante Hego Joko. Le but de ce jeu est de trouver comment mourir
+                        pour passer au niveau suivant.
                     </p>
                     <p class="mt-3 text-sm leading-relaxed text-gray-600">
-                        [Placeholder : Précisez ici le thème officiel de la jam, la synergie de l'équipe et vos
-                        ambitions créatives initiales.]
+                        Le thème de la Jam était "Broken World"
                     </p>
                 </div>
                 <div class="rounded-xl border border-gray-200 bg-gray-50/80 p-5">
@@ -159,19 +157,15 @@
                     <ul class="mt-3 space-y-2 text-xs font-medium text-gray-700">
                         <li class="flex items-center gap-2">
                             <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
-                            Première Game Jam terminée avec succès
+                            Créations rapides d'assets pixels et d'animations pour le jeu
                         </li>
                         <li class="flex items-center gap-2">
                             <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
-                            Découpage agile et priorisation MVP
+                            Organisation d'idées et de tâches pour un projet en équipe
                         </li>
                         <li class="flex items-center gap-2">
                             <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
-                            Coordination Git sous forte pression
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
-                            Publication WebGL / build jouable itch.io
+                            Level design
                         </li>
                     </ul>
                 </div>
@@ -187,12 +181,12 @@
                 </div>
             </div>
 
-            <div class="grid gap-4 sm:grid-cols-1">
-                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-900 shadow-xs cursor-pointer flex flex-col justify-between"
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
                     onclick="openLightbox('/src/images/brokenSoul1.png', 'Broken Soul — Décor du jeu')">
-                    <div class="overflow-hidden h-72 sm:h-96 bg-black flex items-center justify-center">
+                    <div class="overflow-hidden h-52 bg-gray-900/5 flex items-center justify-center">
                         <img src="/src/images/brokenSoul1.png" alt="Broken Soul Title Screen"
-                            class="max-h-80 w-auto object-contain transition duration-300 group-hover:scale-105" />
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
                     </div>
                     <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
                         <span class="text-xs font-semibold text-gray-700 truncate">Décor du jeu Broken
@@ -204,13 +198,12 @@
                         </svg>
                     </div>
                 </div>
-            </div>
-            <div class="grid gap-4 sm:grid-cols-1">
-                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-900 shadow-xs cursor-pointer flex flex-col justify-between"
+
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
                     onclick="openLightbox('/src/images/brokenSoul2.png', 'Broken Soul — Décor du jeu')">
-                    <div class="overflow-hidden h-72 sm:h-96 bg-black flex items-center justify-center">
+                    <div class="overflow-hidden h-52 bg-gray-900/5 flex items-center justify-center">
                         <img src="/src/images/brokenSoul2.png" alt="Broken Soul chargement niveau"
-                            class="max-h-80 w-auto object-contain transition duration-300 group-hover:scale-105" />
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
                     </div>
                     <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
                         <span class="text-xs font-semibold text-gray-700 truncate">Chargement du niveau dans Broken
@@ -232,11 +225,10 @@
                 <h3 class="text-lg font-bold text-gray-900">Bilan d'Expérience</h3>
                 <p class="mt-3 text-sm leading-relaxed text-gray-600">
                     Cette première game jam a été un catalyseur formateur : apprendre à livrer un projet fini en 48
-                    heures, communiquer sous pression, faire des compromis lucides sur le scope et savourer le plaisir
-                    de voir des joueurs s'amuser sur un jeu né en un week-end.
+                    heures, communiquer sous pression et faire des compromis.
                     <br><br>
-                    [Placeholder : Complétez ici avec vos souvenirs de l'événement et vos conseils pour une première jam
-                    réussie.]
+                    Malgré que l'on ait pas fini premier, je suis très content que notre équipe ait remporté le deuxième place et ce jeu a une très
+                    grande place dans mon coeur. Il manque juste au jeu des SFX pour renforcer l'ambiance du jeu.
                 </p>
             </div>
         </section>
