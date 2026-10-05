@@ -7,7 +7,7 @@
     <title>Matéo Alves — Portfolio</title>
 
     <!-- Chemin vers l'icône -->
-    <link rel="icon" type="image/png" href="/src/icon.png" />
+    <link rel="icon" type="image/png" href="/src/icon.webp" />
 
     <!-- Chemin vers le CSS compilé dans dist -->
     <link href="/dist/output.css" rel="stylesheet">
@@ -18,7 +18,7 @@
 
     <!-- Navigation Header -->
     <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
-        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+        <div class="mx-auto flex h-16 max-w-5xl 2xl:max-w-6xl items-center justify-between px-6 sm:px-8">
             <a href="#" class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900">
                 <span class="inline-block size-3 rounded-full bg-gradient-to-r from-[#7458C6] to-[#DF135C]"></span>
                 Matéo Alves
@@ -112,7 +112,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="mx-auto max-w-5xl px-4 pt-16 pb-16 sm:px-6 sm:pt-20 sm:pb-24">
+        <section class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 pt-16 pb-16 sm:px-8 sm:pt-20 sm:pb-24">
             <div
                 class="inline-flex items-center gap-2 rounded-full border border-[#B27FCE]/40 bg-[#B27FCE]/10 py-1.5 pr-4 pl-3 text-xs font-semibold text-[#7458C6]">
                 <span class="relative flex size-2">
@@ -203,7 +203,7 @@
 
         <!-- Compétences Section -->
         <section id="skills" class="scroll-mt-16 border-t border-gray-100 bg-gray-50/70 py-16 sm:py-20">
-            <div class="mx-auto max-w-5xl px-4 sm:px-6">
+            <div class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 sm:px-8">
                 <div class="max-w-xl">
                     <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Savoir-faire & Stack</p>
                     <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -315,7 +315,7 @@
         </section>
 
         <!-- Parcours: Expériences & Formations Section -->
-        <section id="experience" class="mx-auto max-w-5xl scroll-mt-16 px-4 py-16 sm:px-6 sm:py-20">
+        <section id="experience" class="mx-auto max-w-5xl 2xl:max-w-6xl scroll-mt-16 px-6 py-16 sm:px-8 sm:py-20">
             <div class="max-w-xl">
                 <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Historique</p>
                 <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -421,7 +421,7 @@
 
         <!-- Projets Section -->
         <section id="work" class="scroll-mt-16 border-t border-gray-100 bg-gray-50/70">
-            <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+            <div class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 py-16 sm:px-8 sm:py-20">
                 <div class="max-w-lg">
                     <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Réalisations</p>
                     <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -439,9 +439,11 @@
                         <div
                             class="sm:order-last overflow-hidden h-full p-4 bg-gradient-to-br from-[#7458C6]/10 via-[#4E5EFC]/5 to-gray-50 flex flex-col justify-center gap-3">
                             <div class="overflow-hidden rounded-xl border border-gray-200 shadow-sm group">
-                                <img alt="Reconstitution VR du Vase de la Lionne sur Meta Quest 3"
-                                    src="/src/images/vase.png"
-                                    class="h-44 sm:h-48 w-full object-cover transition duration-300 group-hover:scale-105" />
+                                <a href="/src/projets/vase-de-la-lionne.html" class="block" title="Découvrir la Reconstitution Virtuelle du Vase de la Lionne">
+                                    <img alt="Reconstitution VR du Vase de la Lionne sur Meta Quest 3"
+                                        src="/src/images/vase_lionne_thalos.webp"
+                                        class="h-44 sm:h-48 w-full object-cover transition duration-300 group-hover:scale-105" />
+                                </a>
                             </div>
                             <div
                                 class="overflow-hidden rounded-2xl border border-gray-100 shadow-lg dark:border-gray-800">
@@ -463,7 +465,9 @@
                             </div>
 
                             <h3 class="mt-3 text-2xl font-bold text-gray-900">
-                                Reconstitution Virtuelle du Vase de la Lionne
+                                <a href="/src/projets/vase-de-la-lionne.html" class="transition hover:text-[#7458C6]">
+                                    Reconstitution Virtuelle du Vase de la Lionne
+                                </a>
                             </h3>
 
                             <p class="mt-3 text-sm leading-relaxed text-gray-600">
@@ -492,6 +496,17 @@
                                     class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">Patrimoine
                                     Massalia</span>
                             </div>
+
+                            <div class="mt-6 flex flex-wrap items-center gap-4">
+                                <a href="/src/projets/vase-de-la-lionne.html"
+                                    class="inline-flex items-center gap-1.5 rounded-lg bg-[#7458C6] px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-[#5c43aa]">
+                                    Découvrir le projet en détail <svg class="size-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=JMdfzZkTVFw" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-500 hover:text-[#DF135C] transition">
+                                    Vidéo de démonstration ↗
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -501,12 +516,16 @@
                         <div
                             class="overflow-hidden h-full p-4 bg-gradient-to-br from-[#7458C6]/10 via-[#4E5EFC]/5 to-gray-50 flex flex-col justify-center gap-3">
                             <div class="overflow-hidden rounded-xl border border-gray-200 shadow-sm group bg-white">
-                                <img alt="Aperçu du jeu éducatif DayLIA — Capture 1" src="/src/images/malon1.png"
-                                    class="w-full h-auto aspect-[2/1] object-cover transition duration-300 group-hover:scale-105" />
+                                <a href="/src/projets/daylia.html" class="block" title="Découvrir DayLIA">
+                                    <img alt="Aperçu du jeu éducatif DayLIA — Capture 1" src="/src/images/malon1.webp"
+                                        class="w-full h-auto aspect-[2/1] object-cover transition duration-300 group-hover:scale-105" />
+                                </a>
                             </div>
                             <div class="overflow-hidden rounded-xl border border-gray-200 shadow-sm group bg-white">
-                                <img alt="Aperçu du jeu éducatif DayLIA — Capture 2" src="/src/images/malon2.png"
-                                    class="w-full h-auto aspect-[2/1] object-cover transition duration-300 group-hover:scale-105" />
+                                <a href="/src/projets/daylia.html" class="block" title="Découvrir DayLIA">
+                                    <img alt="Aperçu du jeu éducatif DayLIA — Capture 2" src="/src/images/malon2.webp"
+                                        class="w-full h-auto aspect-[2/1] object-cover transition duration-300 group-hover:scale-105" />
+                                </a>
                             </div>
                         </div>
 
@@ -519,7 +538,7 @@
                             </div>
 
                             <h3 class="mt-3 text-2xl font-bold text-gray-900">
-                                DayLIA
+                                <a href="/src/projets/daylia.html" class="transition hover:text-[#7458C6]">DayLIA</a>
                             </h3>
 
                             <p class="mt-3 text-sm leading-relaxed text-gray-600">
@@ -540,27 +559,20 @@
                                     class="rounded bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600">IA</span>
                             </div>
 
-                            <div class="mt-6 flex items-center gap-4">
-                                <a href="https://github.com/Kouromo/MALON" target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#7458C6] transition hover:text-[#DF135C]">
-                                    Voir le projet
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
+                            <div class="mt-6 flex flex-wrap items-center gap-4">
+                                <a href="/src/projets/daylia.html"
+                                    class="inline-flex items-center gap-1.5 rounded-lg bg-[#7458C6] px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-[#5c43aa]">
+                                    Découvrir le projet en détail <svg class="size-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                                 </a>
-                            </div>
-                            <div class="mt-6 flex items-center gap-4">
+                                <a href="https://github.com/Kouromo/MALON" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-500 hover:text-[#DF135C] transition">
+                            <svg class="size-4 fill-current shrink-0" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg>
+                            <span>Projet GitHub</span>
+                        </a>
                                 <a href="https://www.figma.com/design/ycXrXX5G8aRDaPreTXa8d2/Moodboard-EloIA?node-id=1-2&t=8npKkdZ1qrICDkI3-1"
                                     target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#7458C6] transition hover:text-[#DF135C]">
-                                    Voir le Moodboard
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
+                                    class="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-500 hover:text-[#DF135C] transition">
+                                    Voir le Moodboard ↗
                                 </a>
                             </div>
                         </div>
@@ -578,7 +590,7 @@
                             </div>
 
                             <h3 class="mt-3 text-2xl font-bold text-gray-900">
-                                Gamble Versus
+                                <a href="/src/projets/gamble-versus.html" class="transition hover:text-[#7458C6]">Gamble Versus</a>
                             </h3>
 
                             <p class="mt-3 text-sm leading-relaxed text-gray-600">
@@ -602,32 +614,29 @@
                             </div>
 
                             <div class="mt-6 flex flex-wrap items-center gap-4">
+                                <a href="/src/projets/gamble-versus.html"
+                                    class="inline-flex items-center gap-1.5 rounded-lg bg-[#7458C6] px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-[#5c43aa]">
+                                    Découvrir le projet en détail <svg class="size-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                                </a>
                                 <a href="https://kouromo.itch.io/gamble-versus" target="_blank"
                                     rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#7458C6] transition hover:text-[#DF135C]">
-                                    Voir la fiche itch.io
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
+                                    class="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-500 hover:text-[#DF135C] transition">
+                                    Voir la fiche itch.io ↗
                                 </a>
                                 <a href="https://github.com/Kouromo/gamble-versus" target="_blank"
                                     rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#7458C6] transition hover:text-[#DF135C]">
-                                    Voir le projet GitHub
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
+                                    class="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-500 hover:text-[#DF135C] transition">
+                            <svg class="size-4 fill-current shrink-0" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg>
+                            <span>Projet GitHub</span>
+                        </a>
                             </div>
                         </div>
 
                         <div class="overflow-hidden h-full sm:order-last">
-                            <img alt="Gamble Versus screenshot" src="/src/images/gambleVersus.png"
-                                class="h-64 sm:h-full w-full object-cover transition duration-300 hover:scale-105" />
+                            <a href="/src/projets/gamble-versus.html" class="block size-full" title="Découvrir Gamble Versus">
+                                <img alt="Gamble Versus screenshot" src="/src/images/gambleVersus.webp"
+                                    class="h-64 sm:h-full w-full object-cover transition duration-300 hover:scale-105" />
+                            </a>
                         </div>
                     </article>
                 </div>
@@ -650,7 +659,7 @@
 
 
         <!-- Centres d'intérêt & Atouts Section -->
-        <section id="about" class="mx-auto max-w-5xl scroll-mt-16 px-4 py-16 sm:px-6 sm:py-20">
+        <section id="about" class="mx-auto max-w-5xl 2xl:max-w-6xl scroll-mt-16 px-6 py-16 sm:px-8 sm:py-20">
             <div class="max-w-xl">
                 <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Univers & Passion</p>
                 <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -708,7 +717,7 @@
 
         <!-- Témoignage / Recommandation Section -->
         <section class="border-t border-gray-100 bg-gray-50/70">
-            <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
+            <div class="mx-auto max-w-4xl 2xl:max-w-5xl px-6 py-16 sm:px-8 sm:py-20">
                 <figure
                     class="rounded-2xl border border-dashed border-[#B27FCE]/50 bg-gradient-to-b from-[#B27FCE]/5 to-white p-8 text-center shadow-sm">
                     <span
@@ -736,7 +745,7 @@
                     <figcaption class="mt-6 flex items-center justify-center gap-3">
                         <div
                             class="size-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold text-xs">
-                            <img src="/src/images/maltem_ip_logo.jpg" alt="Logo Maltem Insight Performance">
+                            <img src="/src/images/maltem_ip_logo.webp" alt="Logo Maltem Insight Performance">
                         </div>
                         <div class="text-left">
                             <p class="text-sm font-bold text-gray-900">Laurent CAUVET</p>
@@ -748,7 +757,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="mx-auto max-w-5xl scroll-mt-16 px-4 py-16 sm:px-6 sm:py-20">
+        <section id="contact" class="mx-auto max-w-5xl 2xl:max-w-6xl scroll-mt-16 px-6 py-16 sm:px-8 sm:py-20">
             <div
                 class="rounded-3xl bg-gray-900 px-6 py-12 text-center text-white sm:px-12 sm:py-16 shadow-xl relative overflow-hidden">
                 <!-- Background ambient color blur -->
@@ -820,7 +829,8 @@
                             </a>
                             <a href="https://github.com/Kouromo" target="_blank" rel="noopener noreferrer"
                                 class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#7458C6] via-[#4E5EFC] to-[#DF135C] px-4 py-2 text-xs font-semibold text-white transition hover:opacity-90 shadow-md shadow-[#4E5EFC]/20">
-                                GitHub : @Kouromo
+                                <svg class="size-4 fill-current shrink-0" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg>
+                                <span>GitHub : @Kouromo</span>
                             </a>
                         </div>
                     </div>
@@ -832,13 +842,13 @@
     <!-- Footer -->
     <footer class="border-t border-gray-100 bg-white">
         <div
-            class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6">
+            class="mx-auto flex max-w-5xl 2xl:max-w-6xl flex-col items-center gap-4 px-6 py-8 sm:flex-row sm:justify-between sm:px-8">
             <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. Tous droits réservés. Albi, Occitanie,
                 France.</p>
 
             <ul class="flex items-center gap-6 text-xs text-gray-500">
-                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6]">GitHub
-                        (@Kouromo)</a></li>
+                <li><a href="/src/mentions-legales.html" class="transition hover:text-gray-900 font-semibold underline underline-offset-4 decoration-gray-200">Mentions Légales</a></li>
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6] flex items-center gap-1.5"><svg class="size-4 fill-current shrink-0" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg> <span>GitHub (@Kouromo)</span></a></li>
                 <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-[#4E5EFC]">LinkedIn
                         (@mateoalves)</a></li>
                 <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-[#DF135C]">Twitter
@@ -846,24 +856,6 @@
             </ul>
         </div>
     </footer>
-
-    <!-- Modal Lightbox (Lecteur d'image en grand autonome) -->
-    <div id="lightbox-overlay" aria-hidden="true"
-        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-md p-4 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
-        <div id="lightbox-content"
-            class="relative flex max-h-[90vh] max-w-[90vw] scale-95 flex-col items-center transition-transform duration-300 ease-in-out">
-            <button id="lightbox-close" aria-label="Fermer"
-                class="absolute -top-4 -right-4 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-gray-900/90 text-white shadow-lg shadow-black/50 transition duration-200 hover:scale-105 hover:bg-[#7458C6]">
-                <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            <img id="lightbox-img" src="" alt=""
-                class="max-h-[80vh] max-w-[90vw] rounded-xl border border-white/15 object-contain shadow-2xl shadow-black/80" />
-            <p id="lightbox-caption"
-                class="mt-3 max-w-[80vw] text-center text-sm font-semibold text-gray-100 drop-shadow-md"></p>
-        </div>
-    </div>
 
     <script>
         const navToggleCheckbox = document.getElementById('nav-toggle')
@@ -874,70 +866,6 @@
                 navToggleLabel.setAttribute('aria-expanded', String(navToggleCheckbox.checked))
             })
         }
-
-        // Script Lecteur d'image Lightbox
-        const lightboxOverlay = document.getElementById('lightbox-overlay')
-        const lightboxContent = document.getElementById('lightbox-content')
-        const lightboxImg = document.getElementById('lightbox-img')
-        const lightboxCaption = document.getElementById('lightbox-caption')
-        const lightboxClose = document.getElementById('lightbox-close')
-
-        function openLightbox(src, alt) {
-            if (!lightboxOverlay || !lightboxImg || !lightboxContent) return
-            lightboxImg.src = src
-            lightboxImg.alt = alt || ''
-            if (lightboxCaption) lightboxCaption.textContent = alt || ''
-            lightboxOverlay.classList.remove('opacity-0', 'pointer-events-none')
-            lightboxOverlay.classList.add('opacity-100', 'pointer-events-auto')
-            lightboxContent.classList.remove('scale-95')
-            lightboxContent.classList.add('scale-100')
-            document.body.style.overflow = 'hidden'
-        }
-
-        function closeLightbox() {
-            if (!lightboxOverlay || !lightboxContent) return
-            lightboxOverlay.classList.remove('opacity-100', 'pointer-events-auto')
-            lightboxOverlay.classList.add('opacity-0', 'pointer-events-none')
-            lightboxContent.classList.remove('scale-100')
-            lightboxContent.classList.add('scale-95')
-            document.body.style.overflow = ''
-            setTimeout(() => {
-                if (lightboxOverlay.classList.contains('opacity-0') && lightboxImg) {
-                    lightboxImg.src = ''
-                }
-            }, 300)
-        }
-
-        // Rendre les images de projets cliquables
-        document.querySelectorAll('main article img').forEach(img => {
-            img.style.cursor = 'pointer'
-            img.title = "Cliquer pour agrandir l'image"
-            img.addEventListener('click', (e) => {
-                e.preventDefault()
-                e.stopPropagation()
-                openLightbox(img.src, img.alt)
-            })
-        })
-
-        if (lightboxClose) {
-            lightboxClose.addEventListener('click', (e) => {
-                e.preventDefault()
-                e.stopPropagation()
-                closeLightbox()
-            })
-        }
-
-        if (lightboxOverlay) {
-            lightboxOverlay.addEventListener('click', (e) => {
-                if (e.target === lightboxOverlay) {
-                    closeLightbox()
-                }
-            })
-        }
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeLightbox()
-        })
     </script>
 </body>
 

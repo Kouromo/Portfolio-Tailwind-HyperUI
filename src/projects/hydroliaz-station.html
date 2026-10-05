@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroliaz Station — Matéo Alves</title>
+
+    <link rel="icon" type="image/png" href="/src/icon.webp" />
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 antialiased selection:bg-[#7458C6] selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex h-16 max-w-5xl 2xl:max-w-6xl items-center justify-between px-6 sm:px-8">
+            <a href="/src/projects-en.html"
+                class="flex items-center gap-2 text-sm font-bold tracking-tight text-gray-900 transition hover:text-[#7458C6]">
+                <svg class="size-4 text-[#7458C6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Back to projects</span>
+            </a>
+
+            <div class="flex items-center gap-3">
+                <div class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-50/80 p-0.5 text-xs font-semibold">
+                    <a href="/src/projets/hydroliaz-station.html" class="rounded-md px-2.5 py-1 text-gray-500 hover:text-gray-900 transition">FR</a>
+                    <span class="rounded-md bg-white px-2.5 py-1 text-[#7458C6] shadow-xs">EN</span>
+                </div>
+
+                
+                <a href="/src/CV_Mateo_EN.pdf" download="CV_Mateo_EN.pdf" target="_blank"
+                    class="hidden items-center gap-1.5 rounded-md border border-gray-200 bg-gray-50/80 px-3 py-2 text-xs font-semibold text-gray-700 transition hover:bg-gray-100 hover:text-[#7458C6] hover:border-[#7458C6]/30 sm:inline-flex">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor" class="size-3.5 text-[#7458C6]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    My Resume
+                </a>
+
+                <a href="/src/index-en.html#contact"
+                    class="hidden rounded-md bg-[#7458C6] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#5c43aa] sm:block shadow-sm shadow-[#7458C6]/30">
+                    Contact me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Breadcrumbs -->
+        <div class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 pt-8 pb-4 sm:px-8">
+            <nav class="flex items-center gap-2 text-xs font-medium text-gray-500">
+                <a href="/src/index-en.html" class="transition hover:text-[#7458C6]">Home</a>
+                <span class="text-gray-300">/</span>
+                <a href="/src/projects-en.html" class="transition hover:text-[#7458C6]">All projects</a>
+                <span class="text-gray-300">/</span>
+                <span class="font-semibold text-gray-900 truncate">Hydroliaz Station</span>
+            </nav>
+        </div>
+
+        <!-- Hero Header -->
+        <section class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 pt-4 pb-10 sm:px-8">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="rounded-full bg-[#7458C6]/10 px-3.5 py-1 text-xs font-semibold text-[#7458C6] border border-[#7458C6]/20">
+                    Educational Game
+                </span>
+                <span class="text-xs text-gray-500">Master AMINJ • Aquarelle Interactive Team</span>
+            </div>
+
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                Hydroliaz Station
+            </h1>
+
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-gray-600 max-w-3xl">
+                Serious game developed in Unity (C#) to teach students about the states and transformations of water in a fun and interactive way.
+            </p>
+            <p class="mt-3 inline-flex items-center gap-1.5 rounded-md bg-purple-50 px-2.5 py-1 text-xs font-semibold text-purple-800 border border-purple-200">
+                <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                AI: Vibe coding
+            </p>
+
+            <!-- Quick Meta Card -->
+            <div class="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-gray-200 bg-gray-50/70 p-5 sm:grid-cols-4">
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Role</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">Unity Developer</span>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Duration</span>
+                    <span class="mt-1 block text-xs sm:text-sm font-bold text-gray-900">48 hours</span>
+                </div>
+                <div class="col-span-2">
+                    <span class="block text-[11px] font-semibold uppercase tracking-wider text-gray-400">Technologies & Tools</span>
+                    <div class="mt-1.5 flex flex-wrap gap-1.5">
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">C#</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Unity</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">UX/UI Design</span>
+                        <span class="rounded bg-gray-200/70 px-2 py-0.5 text-xs font-semibold text-gray-700">Serious Game</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Links -->
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+                <a href="https://youtu.be/6snyXhXT8og" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 rounded-lg bg-[#7458C6] px-4 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-[#5c43aa] hover:shadow-md">
+                    <span>Demonstration video</span>
+                    <svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </a>
+            </div>
+            <p class="mt-4 text-xs font-medium text-[#DF135C] bg-[#DF135C]/10 inline-block px-3 py-1.5 rounded-lg border border-[#DF135C]/20">
+                <span class="mr-1">🌍</span> <strong>Note:</strong> The playable game and its interface are only available in French.
+            </p>
+        </section>
+
+        <!-- Hero Video Banner -->
+        <section class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 pb-12 sm:px-8">
+            <div class="overflow-hidden rounded-2xl border border-gray-200 bg-gray-900 shadow-md">
+                <div class="aspect-video w-full">
+                    <iframe class="size-full" src="https://www.youtube-nocookie.com/embed/6snyXhXT8og"
+                        title="Hydroliaz Station Demonstration" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specific Structure: Pitch & Pedagogy -->
+        <section class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 py-8 sm:px-8 border-t border-gray-100">
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="md:col-span-2">
+                    <h2 class="text-xl font-bold text-gray-900 sm:text-2xl">Concept & Educational Objectives</h2>
+                    <p class="mt-4 text-sm leading-relaxed text-gray-600">
+                        At the heart of an intergalactic hydration space station, the player takes on the role of a cosmic bartender who must serve demanding alien clients. Each alien species comes from a planet with extreme climatic and atmospheric conditions.
+                    </p>
+                    <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                        To succeed, the player must manipulate temperature, pressure, and containers to transform water into the correct physical state (solid, liquid, or gas) while understanding the underlying thermodynamic principles.
+                    </p>
+                    <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                        The game targets 15-year-old students following the 10th-grade physics-chemistry curriculum. The goal is for them to memorize the different states of water and the names of the transformations. 
+                    </p>
+                </div>
+                <div class="rounded-xl border border-gray-200 bg-gray-50/80 p-5">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400">Pedagogical Mechanics</h3>
+                    <ul class="mt-3 space-y-2 text-xs font-medium text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            State changes: melting, vaporization, condensation
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Interactive temperature & pressure parameters
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Progressive validation via score & customer satisfaction
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="size-1.5 rounded-full bg-[#7458C6]"></span>
+                            Clear and accessible visual feedback
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process -->
+        <section class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 py-8 sm:px-8 border-t border-gray-100">
+            <div class="max-w-2xl mb-8">
+                <p class="text-xs font-bold uppercase tracking-wider text-[#7458C6]">Design</p>
+                <h2 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">Creation Stages</h2>
+                <p class="mt-2 text-sm text-gray-600">From didactic transposition to Unity implementation.</p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+                <!-- Step 1 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 1</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Didactic Transposition & Game Design</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Translating physics and chemistry concepts (saturation curves, phase changes) into dynamic and rewarding gameplay loops.
+                        <br><br>
+                        <em>In the game, there are three types of aliens: the cloud which consumes water vapor, the orc which consumes ice, and the fish which consumes liquid water.</em>
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 2</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">Unity Project & State Management</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Implementation of a machine that determines the state of water based on the climate. The player can transform and deliver it to the aliens. As time passes, the climate changes, forcing the player to adapt to serve the correct drink.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="rounded-xl border border-gray-100 bg-gray-50/70 p-5 transition hover:border-[#7458C6]/30 hover:bg-white hover:shadow-sm">
+                    <span class="text-xs font-extrabold text-[#7458C6] tracking-wider uppercase">Step 3</span>
+                    <h3 class="mt-1 text-base font-bold text-gray-900">User Interface & Visual Feedback</h3>
+                    <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                        Design of a clear interface and a book serving as a pedagogical guide to help the player understand water transformations and the necessary conditions for each state.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 py-8 sm:px-8 border-t border-gray-100">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-gray-900 sm:text-2xl">Project Gallery</h2>
+                    <p class="text-xs text-gray-500 mt-1">Click on a screenshot to open it in full screen.</p>
+                </div>
+            </div>
+            
+            <!-- Image 1 -->
+            <div class="grid gap-4 sm:grid-cols-2">
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/HydroliazStation_Main.webp', 'Écran principal d\'Hydroliaz Station')">
+                    <div class="overflow-hidden h-52 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/HydroliazStation_Main.webp" alt="Écran principal Hydroliaz Station"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-700 truncate">Hydration space station</span>
+                        <svg class="size-4 text-gray-400 group-hover:text-[#7458C6] shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Image 2-->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/Hydroliaz_Station_Guide.webp', 'Pedagogical guide for Hydroliaz station')">
+                    <div class="overflow-hidden h-52 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/Hydroliaz_Station_Guide.webp" alt="Pedagogical guide Hydroliaz Station"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex flex-col">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-xs font-semibold text-gray-700 truncate">Pedagogical guide</span>
+                            <svg class="size-4 text-gray-400 group-hover:text-[#7458C6] shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </div>
+                        <p class="text-[10px] text-gray-500 italic mt-2 whitespace-normal leading-relaxed">Translation: "SUBLIMATION. The freeze-dryer places ice under a vacuum so it evaporates directly without melting." / "DEPOSITION (SOLID CONDENSATION). The cryogenic chamber abruptly cools water vapor so it instantly crystallizes into frost."</p>
+                    </div>
+                </div>
+
+                <!-- Image 3-->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-xs cursor-pointer flex flex-col justify-between"
+                    onclick="openLightbox('/src/images/Hydroliaz_Station_Bar.webp', 'Water transformation machines in Hydroliaz station')">
+                    <div class="overflow-hidden h-52 bg-gray-900/5 flex items-center justify-center">
+                        <img src="/src/images/Hydroliaz_Station_Bar.webp" alt="Water transformation machines in Hydroliaz station"
+                            class="size-full object-cover transition duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-3 bg-white border-t border-gray-100 flex flex-col">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-xs font-semibold text-gray-700 truncate">Water transformation machines</span>
+                            <svg class="size-4 text-gray-400 group-hover:text-[#7458C6] shrink-0 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                        </div>
+                        <p class="text-[10px] text-gray-500 italic mt-2 whitespace-normal leading-relaxed">Translations (top row): Sublimation, Liquefaction, Deposition (Solid Condensation). (bottom row): Solidification, Vaporization, Melting.</p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Retrospective -->
+        <section class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 py-8 sm:px-8 border-t border-gray-100">
+            <div class="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 via-white to-gray-50 p-6 sm:p-8">
+                <h3 class="text-lg font-bold text-gray-900">Project Review</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">
+                    This serious game allowed me to understand the entire process prior to designing a game by adapting the target to a specific audience.
+                    <br><br>
+                    I gained experience using Unity and C# to create game mechanics.
+                </p>
+            </div>
+        </section>
+
+        <!-- Navigation Previous project / Suivant -->
+        <nav class="mx-auto max-w-5xl 2xl:max-w-6xl px-6 py-12 sm:px-8 border-t border-gray-100">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <a href="/src/projects/daylia.html"
+                    class="group flex items-center gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50">
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition"><svg class="size-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg></span>
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Previous project</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">DayLIA</span>
+                    </div>
+                </a>
+
+                <a href="/src/projects/impact-certificate.html"
+                    class="group flex items-center justify-end gap-3 rounded-xl border border-gray-200 p-4 transition hover:border-[#7458C6]/40 hover:bg-gray-50/50 text-right">
+                    <div>
+                        <span class="block text-[11px] font-semibold text-gray-400 uppercase tracking-wider">Next project</span>
+                        <span class="text-sm font-bold text-gray-900 group-hover:text-[#7458C6] transition">Impact Certificate</span>
+                    </div>
+                    <span class="flex size-9 items-center justify-center rounded-lg bg-gray-100 text-gray-600 group-hover:bg-[#7458C6] group-hover:text-white transition"><svg class="size-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></span>
+                </a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white mt-auto">
+        <div class="mx-auto flex max-w-5xl 2xl:max-w-6xl flex-col items-center gap-4 px-6 py-8 sm:flex-row sm:justify-between sm:px-8">
+            <p class="text-xs text-gray-500">&copy; 2026 Matéo Alves. All rights reserved. Albi, Occitanie, France.</p>
+            <ul class="flex items-center gap-6 text-xs text-gray-500">
+                <li><a href="/src/legal-notices.html" class="transition hover:text-gray-900 font-semibold underline underline-offset-4 decoration-gray-200">Legal Notices</a></li>
+                <li><a href="https://github.com/Kouromo" target="_blank" class="transition hover:text-[#7458C6]">GitHub (@Kouromo)</span></a></li>
+                <li><a href="https://linkedin.com" target="_blank" class="transition hover:text-[#4E5EFC]">LinkedIn (@mateoalves)</a></li>
+                <li><a href="https://x.com/Kouromo_" target="_blank" class="transition hover:text-[#DF135C]">Twitter (@Kouromo_)</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-overlay" aria-hidden="true"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-md p-4 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+        <div id="lightbox-content"
+            class="relative flex max-h-[90vh] max-w-[90vw] scale-95 flex-col items-center transition-transform duration-300 ease-in-out">
+            <button id="lightbox-close" aria-label="Close"
+                class="absolute -top-4 -right-4 z-10 flex size-10 items-center justify-center rounded-full border border-white/20 bg-gray-900/90 text-white shadow-lg shadow-black/50 transition duration-200 hover:scale-105 hover:bg-[#7458C6]">
+                <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="lightbox-img" src="" alt=""
+                class="max-h-[80vh] max-w-[90vw] rounded-xl border border-white/15 object-contain shadow-2xl shadow-black/80" />
+            <p id="lightbox-caption" class="mt-3 max-w-[80vw] text-center text-sm font-semibold text-gray-100 drop-shadow-md"></p>
+        </div>
+    </div>
+
+    <script src="/src/js/lightbox.js"></script>
+</body>
+
+</html>
